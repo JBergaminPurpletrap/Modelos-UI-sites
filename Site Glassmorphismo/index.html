@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism UI Kit — Modelo de Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ============================================================ -->
+    <!-- BACKGROUND ANIMADO                                             -->
+    <!-- ============================================================ -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- NAVBAR                                                        -->
+    <!-- ============================================================ -->
+    <nav class="navbar glass" role="navigation" aria-label="Navegação principal">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-cube"></i>
+                <span>Glass UI</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#componentes" class="nav-link active">Componentes</a></li>
+                <li><a href="#botoes" class="nav-link">Botões</a></li>
+                <li><a href="#cards" class="nav-link">Cards</a></li>
+                <li><a href="#formularios" class="nav-link">Formulários</a></li>
+                <li><a href="#modais" class="nav-link">Modais</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-icon glass-sm" aria-label="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================================ -->
+    <!-- HERO                                                          -->
+    <!-- ============================================================ -->
+    <header class="hero" id="hero">
+        <div class="hero-content glass">
+            <span class="hero-badge">✦ UI Kit v1.0</span>
+            <h1>Glassmorphism<br><span class="gradient-text">Design System</span></h1>
+            <p>Um modelo de site premium com efeito glassmorphism. Explore componentes, padrões e estilos prontos para uso em qualquer projeto.</p>
+            <div class="hero-actions">
+                <a href="#componentes" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Explorar
+                </a>
+                <a href="#docs" class="btn btn-outline">
+                    <i class="fas fa-book"></i> Documentação
+                </a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item glass-sm">
+                <span class="stat-number" data-count="50+">0</span>
+                <span class="stat-label">Componentes</span>
+            </div>
+            <div class="stat-item glass-sm">
+                <span class="stat-number" data-count="12">0</span>
+                <span class="stat-label">Categorias</span>
+            </div>
+            <div class="stat-item glass-sm">
+                <span class="stat-number" data-count="100">0</span>
+                <span class="stat-label">% Customizável</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: COMPONENTES (NAVEGAÇÃO RÁPIDA)                        -->
+    <!-- ============================================================ -->
+    <section class="section" id="componentes">
+        <div class="section-header">
+            <span class="section-tag">Navegação</span>
+            <h2>Catálogo de Componentes</h2>
+            <p>Todos os elementos que você precisa para construir interfaces modernas com glassmorphism.</p>
+        </div>
+        <div class="catalog-grid">
+            <a href="#botoes" class="catalog-card glass-sm">
+                <div class="catalog-icon"><i class="fas fa-mouse-pointer"></i></div>
+                <h3>Botões</h3>
+                <p>8 variações</p>
+            </a>
+            <a href="#cards" class="catalog-card glass-sm">
+                <div class="catalog-icon"><i class="fas fa-layer-group"></i></div>
+                <h3>Cards</h3>
+                <p>6 variações</p>
+            </a>
+            <a href="#formularios" class="catalog-card glass-sm">
+                <div class="catalog-icon"><i class="fas fa-keyboard"></i></div>
+                <h3>Formulários</h3>
+                <p>10+ elementos</p>
+            </a>
+            <a href="#modais" class="catalog-card glass-sm">
+                <div class="catalog-icon"><i class="fas fa-window-maximize"></i></div>
+                <h3>Modais & Pop-ups</h3>
+                <p>4 variações</p>
+            </a>
+            <a href="#navegacao" class="catalog-card glass-sm">
+                <div class="catalog-icon"><i class="fas fa-bars"></i></div>
+                <h3>Navegação</h3>
+                <p>5 variações</p>
+            </a>
+            <a href="#alertas" class="catalog-card glass-sm">
+                <div class="catalog-icon"><i class="fas fa-bell"></i></div>
+                <h3>Alertas</h3>
+                <p>5 tipos</p>
+            </a>
+            <a href="#badges" class="catalog-card glass-sm">
+                <div class="catalog-icon"><i class="fas fa-tag"></i></div>
+                <h3>Badges & Tags</h3>
+                <p>6 variações</p>
+            </a>
+            <a href="#loaders" class="catalog-card glass-sm">
+                <div class="catalog-icon"><i class="fas fa-spinner"></i></div>
+                <h3>Loaders</h3>
+                <p>5 variações</p>
+            </a>
+            <a href="#tabelas" class="catalog-card glass-sm">
+                <div class="catalog-icon"><i class="fas fa-table"></i></div>
+                <h3>Tabelas</h3>
+                <p>2 estilos</p>
+            </a>
+            <a href="#progresso" class="catalog-card glass-sm">
+                <div class="catalog-icon"><i class="fas fa-chart-bar"></i></div>
+                <h3>Barras de Progresso</h3>
+                <p>3 variações</p>
+            </a>
+            <a href="#abas" class="catalog-card glass-sm">
+                <div class="catalog-icon"><i class="fas fa-tab"></i></div>
+                <h3>Abas & Accordion</h3>
+                <p>2 variações</p>
+            </a>
+            <a href="#rodape" class="catalog-card glass-sm">
+                <div class="catalog-icon"><i class="fas fa-shoe-prints"></i></div>
+                <h3>Rodapé</h3>
+                <p>1 modelo</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: BOTÕES                                                 -->
+    <!-- ============================================================ -->
+    <section class="section" id="botoes">
+        <div class="section-header">
+            <span class="section-tag">01</span>
+            <h2>Botões</h2>
+            <p>Variações de botões com efeito glassmorphism para diferentes contextos.</p>
+        </div>
+
+        <div class="demo-grid">
+            <!-- Primário -->
+            <div class="demo-card glass">
+                <h4>Primário</h4>
+                <div class="demo-row">
+                    <button class="btn btn-primary">Padrão</button>
+                    <button class="btn btn-primary btn-hover">Hover</button>
+                    <button class="btn btn-primary" disabled>Desabilitado</button>
+                    <button class="btn btn-primary"><i class="fas fa-download"></i> Com ícone</button>
+                </div>
+                <div class="code-snippet">
+                    <code><button class="btn btn-primary">Padrão</button></code>
+                    <button class="btn-copy glass-xs" data-code='<button class="btn btn-primary">Padrão</button>'><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+
+            <!-- Secundário -->
+            <div class="demo-card glass">
+                <h4>Secundário</h4>
+                <div class="demo-row">
+                    <button class="btn btn-secondary">Padrão</button>
+                    <button class="btn btn-secondary btn-hover">Hover</button>
+                    <button class="btn btn-secondary" disabled>Desabilitado</button>
+                    <button class="btn btn-secondary"><i class="fas fa-cog"></i> Com ícone</button>
+                </div>
+                <div class="code-snippet">
+                    <code><button class="btn btn-secondary">Padrão</button></code>
+                    <button class="btn-copy glass-xs" data-code='<button class="btn btn-secondary">Padrão</button>'><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+
+            <!-- Outline -->
+            <div class="demo-card glass">
+                <h4>Outline</h4>
+                <div class="demo-row">
+                    <button class="btn btn-outline">Padrão</button>
+                    <button class="btn btn-outline btn-hover">Hover</button>
+                    <button class="btn btn-outline" disabled>Desabilitado</button>
+                    <button class="btn btn-outline"><i class="fas fa-star"></i> Com ícone</button>
+                </div>
+                <div class="code-snippet">
+                    <code><button class="btn btn-outline">Padrão</button></code>
+                    <button class="btn-copy glass-xs" data-code='<button class="btn btn-outline">Padrão</button>'><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+
+            <!-- Ghost -->
+            <div class="demo-card glass">
+                <h4>Ghost</h4>
+                <div class="demo-row">
+                    <button class="btn btn-ghost">Padrão</button>
+                    <button class="btn btn-ghost btn-hover">Hover</button>
+                    <button class="btn btn-ghost" disabled>Desabilitado</button>
+                    <button class="btn btn-ghost"><i class="fas fa-link"></i> Com ícone</button>
+                </div>
+                <div class="code-snippet">
+                    <code><button class="btn btn-ghost">Padrão</button></code>
+                    <button class="btn-copy glass-xs" data-code='<button class="btn btn-ghost">Padrão</button>'><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+
+            <!-- Gradiente -->
+            <div class="demo-card glass">
+                <h4>Gradiente</h4>
+                <div class="demo-row">
+                    <button class="btn btn-gradient">Padrão</button>
+                    <button class="btn btn-gradient btn-hover">Hover</button>
+                    <button class="btn btn-gradient" disabled>Desabilitado</button>
+                    <button class="btn btn-gradient"><i class="fas fa-magic"></i> Com ícone</button>
+                </div>
+                <div class="code-snippet">
+                    <code><button class="btn btn-gradient">Padrão</button></code>
+                    <button class="btn-copy glass-xs" data-code='<button class="btn btn-gradient">Padrão</button>'><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+
+            <!-- Tamanhos -->
+            <div class="demo-card glass">
+                <h4>Tamanhos</h4>
+                <div class="demo-row">
+                    <button class="btn btn-primary btn-sm">Pequeno</button>
+                    <button class="btn btn-primary">Médio</button>
+                    <button class="btn btn-primary btn-lg">Grande</button>
+                    <button class="btn btn-primary btn-xl">Extra</button>
+                </div>
+                <div class="code-snippet">
+                    <code><button class="btn btn-primary btn-lg">Grande</button></code>
+                    <button class="btn-copy glass-xs" data-code='<button class="btn btn-primary btn-lg">Grande</button>'><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+
+            <!-- Botões de Ícone -->
+            <div class="demo-card glass">
+                <h4>Botões de Ícone</h4>
+                <div class="demo-row">
+                    <button class="btn-icon glass" aria-label="Favoritar"><i class="fas fa-heart"></i></button>
+                    <button class="btn-icon glass-sm" aria-label="Compartilhar"><i class="fas fa-share-alt"></i></button>
+                    <button class="btn-icon glass-xs" aria-label="Editar"><i class="fas fa-pen"></i></button>
+                    <button class="btn-icon glass" aria-label="Deletar"><i class="fas fa-trash"></i></button>
+                    <button class="btn-icon glass-sm" aria-label="Download"><i class="fas fa-cloud-download-alt"></i></button>
+                </div>
+                <div class="code-snippet">
+                    <code><button class="btn-icon glass"><i class="fas fa-heart"></i></button></code>
+                    <button class="btn-copy glass-xs" data-code='<button class="btn-icon glass"><i class="fas fa-heart"></i></button>'><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+
+            <!-- Botão com Loading -->
+            <div class="demo-card glass">
+                <h4>Botão com Loading</h4>
+                <div class="demo-row">
+                    <button class="btn btn-primary btn-loading" id="btnLoading">
+                        <span class="btn-text">Salvar</span>
+                        <span class="btn-spinner"><i class="fas fa-spinner fa-spin"></i></span>
+                    </button>
+                    <button class="btn btn-secondary btn-loading">
+                        <span class="btn-text">Enviando</span>
+                        <span class="btn-spinner"><i class="fas fa-circle-notch fa-spin"></i></span>
+                    </button>
+                </div>
+                <div class="code-snippet">
+                    <code><button class="btn btn-primary btn-loading">...</button></code>
+                    <button class="btn-copy glass-xs" data-code='<button class="btn btn-primary btn-loading"><span class="btn-text">Salvar</span><span class="btn-spinner"><i class="fas fa-spinner fa-spin"></i></span></button>'><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+
+            <!-- Botão Grupo -->
+            <div class="demo-card glass">
+                <h4>Grupo de Botões</h4>
+                <div class="demo-row">
+                    <div class="btn-group">
+                        <button class="btn btn-outline active">Dia</button>
+                        <button class="btn btn-outline">Mês</button>
+                        <button class="btn btn-outline">Ano</button>
+                    </div>
+                </div>
+                <div class="code-snippet">
+                    <code><div class="btn-group"><button class="btn btn-outline active">...</button></div></code>
+                    <button class="btn-copy glass-xs" data-code='<div class="btn-group"><button class="btn btn-outline active">Dia</button><button class="btn btn-outline">Semana</button><button class="btn btn-outline">Mês</button><button class="btn btn-outline">Ano</button></div>'><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: CARDS                                                 -->
+    <!-- ============================================================ -->
+    <section class="section" id="cards">
+        <div class="section-header">
+            <span class="section-tag">02</span>
+            <h2>Cards</h2>
+            <p>Diferentes estilos de cards com efeito glass para exibir conteúdo.</p>
+        </div>
+
+        <div class="demo-grid cards-grid">
+            <!-- Card Padrão -->
+            <div class="card glass">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=250&fit=crop" alt="Abstract art">
+                    <span class="card-badge">Novo</span>
+                </div>
+                <div class="card-body">
+                    <span class="card-category">Design</span>
+                    <h3>Card com Imagem</h3>
+                    <p>Um card completo com imagem, badge, categoria e ações.</p>
+                    <div class="card-meta">
+                        <span><i class="far fa-clock"></i> 2 min</span>
+                        <span><i class="far fa-eye"></i> 1.2k</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-primary btn-sm">Ver mais</button>
+                        <button class="btn-icon glass-xs"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Simples -->
+            <div class="card glass">
+                <div class="card-body">
+                    <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Card Simples</h3>
+                    <p>Ideal para recursos, benefícios ou informações rápidas com ícone destacado.</p>
+                </div>
+            </div>
+
+            <!-- Card Horizontal -->
+            <div class="card glass card-horizontal">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=200&h=200&fit=crop" alt="Code">
+                </div>
+                <div class="card-body">
+                    <h3>Card Horizontal</h3>
+                    <p>Layout horizontal para perfis, itens de lista ou previews.</p>
+                    <div class="card-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span>4.5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card de Preço -->
+            <div class="card glass card-price featured">
+                <div class="card-body">
+                    <span class="card-popular">Mais Popular</span>
+                    <h3>Premium</h3>
+                    <div class="price">
+                        <span class="price-currency">R$</span>
+                        <span class="price-value">49</span>
+                        <span class="price-period">/mês</span>
+                    </div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> Até 10 projetos</li>
+                        <li><i class="fas fa-check"></i> Suporte prioritário</li>
+                        <li><i class="fas fa-check"></i> 50GB de armazenamento</li>
+                        <li><i class="fas fa-check"></i> Domínio personalizado</li>
+                    </ul>
+                    <button class="btn btn-gradient btn-full">Assinar agora</button>
+                </div>
+            </div>
+
+            <!-- Card de Perfil -->
+            <div class="card glass card-profile">
+                <div class="card-body">
+                    <div class="profile-avatar">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Avatar">
+                        <span class="profile-status"></span>
+                    </div>
+                    <h3>Ana Silva</h3>
+                    <span class="profile-role">Designer UX/UI</span>
+                    <div class="profile-social">
+                        <a href="#" class="glass-xs"><i class="fab fa-github"></i></a>
+                        <a href="#" class="glass-xs"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="glass-xs"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="glass-xs"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                    <button class="btn btn-outline btn-full">Seguir</button>
+                </div>
+            </div>
+
+            <!-- Card de Estatística -->
+            <div class="card glass card-stats">
+                <div class="card-body">
+                    <div class="stats-header">
+                        <span class="stats-title">Visitantes Hoje</span>
+                        <span class="stats-icon glass-xs"><i class="fas fa-users"></i></span>
+                    </div>
+                    <div class="stats-number">2,847</div>
+                    <div class="stats-change positive">
+                        <i class="fas fa-arrow-up"></i> +12.5% desde ontem
+                    </div>
+                    <div class="stats-bar">
+                        <div class="stats-bar-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: FORMULÁRIOS                                           -->
+    <!-- ============================================================ -->
+    <section class="section" id="formularios">
+        <div class="section-header">
+            <span class="section-tag">03</span>
+            <h2>Formulários</h2>
+            <p>Elementos de formulário com estilo glassmorphism para inputs, selects e mais.</p>
+        </div>
+
+        <div class="demo-grid">
+            <!-- Inputs -->
+            <div class="demo-card glass">
+                <h4>Inputs de Texto</h4>
+                <div class="form-group">
+                    <label class="form-label">Nome completo</label>
+                    <div class="input-group">
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" class="form-input" placeholder="Seu nome">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <div class="input-group">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input type="email" class="form-input" placeholder="seu@email.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Senha</label>
+                    <div class="input-group">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" class="form-input" placeholder="••••••••">
+                        <button class="input-toggle" type="button"><i class="fas fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Com erro</label>
+                    <div class="input-group error">
+                        <i class="fas fa-exclamation-circle input-icon"></i>
+                        <input type="text" class="form-input" placeholder="Email inválido" value="email-invalido">
+                    </div>
+                    <span class="form-error">Por favor, insira um email válido.</span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Desabilitado</label>
+                    <div class="input-group">
+                        <i class="fas fa-ban input-icon"></i>
+                        <input type="text" class="form-input" placeholder="Campo desabilitado" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Textarea & Select -->
+            <div class="demo-card glass">
+                <h4>Textarea & Select</h4>
+                <div class="form-group">
+                    <label class="form-label">Mensagem</label>
+                    <textarea class="form-input form-textarea" placeholder="Digite sua mensagem..." rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">País</label>
+                    <div class="input-group">
+                        <i class="fas fa-globe input-icon"></i>
+                        <select class="form-input form-select">
+                            <option value="">Selecione um país</option>
+                            <option value="br">Brasil</option>
+                            <option value="us">Estados Unidos</option>
+                            <option value="pt">Portugal</option>
+                            <option value="es">Espanha</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Tamanho</label>
+                    <div class="input-group">
+                        <i class="fas fa-ruler input-icon"></i>
+                        <input type="range" class="form-range" min="0" max="100" value="50">
+                        <span class="range-value">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Checkboxes & Radios -->
+            <div class="demo-card glass">
+                <h4>Checkboxes & Radios</h4>
+                <div class="form-group">
+                    <label class="form-label">Interesses</label>
+                    <label class="form-checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        Design
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Desenvolvimento
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Marketing
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox" disabled>
+                        <span class="checkmark"></span>
+                        Desabilitado
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Plano</label>
+                    <label class="form-radio">
+                        <input type="radio" name="plano" checked>
+                        <span class="radiomark"></span>
+                        Básico
+                    </label>
+                    <label class="form-radio">
+                        <input type="radio" name="plano">
+                        <span class="radiomark"></span>
+                        Profissional
+                    </label>
+                    <label class="form-radio">
+                        <input type="radio" name="plano">
+                        <span class="radiomark"></span>
+                        Enterprise
+                    </label>
+                </div>
+            </div>
+
+            <!-- Toggle & Tags -->
+            <div class="demo-card glass">
+                <h4>Toggle & Tags</h4>
+                <div class="form-group">
+                    <label class="form-label">Preferências</label>
+                    <label class="form-toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                        Notificações push
+                    </label>
+                    <label class="form-toggle">
+                        <input type="checkbox">
+                        <span class="toggle-slider"></span>
+                        Modo escuro
+                    </label>
+                    <label class="form-toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                        Sons do sistema
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Tags / Chips</label>
+                    <div class="tags-container">
+                        <span class="tag glass-xs">React <i class="fas fa-times"></i></span>
+                        <span class="tag glass-xs">Vue <i class="fas fa-times"></i></span>
+                        <span class="tag glass-xs">Angular <i class="fas fa-times"></i></span>
+                        <span class="tag glass-xs tag-add"><i class="fas fa-plus"></i> Adicionar</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Upload de Arquivo</label>
+                    <div class="form-upload glass-sm">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Arraste arquivos ou <span>clique para selecionar</span></p>
+                        <span class="upload-hint">PNG, JPG ou PDF até 10MB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: MODAIS & POP-UPS                                      -->
+    <!-- ============================================================ -->
+    <section class="section" id="modais">
+        <div class="section-header">
+            <span class="section-tag">04</span>
+            <h2>Modais & Pop-ups</h2>
+            <p>Janelas modais, tooltips, dropdowns e popovers com efeito glass.</p>
+        </div>
+
+        <div class="demo-grid">
+            <!-- Modal Trigger -->
+            <div class="demo-card glass">
+                <h4>Modal Padrão</h4>
+                <p>Clique para abrir um modal de exemplo com overlay glass.</p>
+                <button class="btn btn-primary" id="openModal">Abrir Modal</button>
+            </div>
+
+            <!-- Modal Confirmação -->
+            <div class="demo-card glass">
+                <h4>Modal de Confirmação</h4>
+                <p>Modal para ações de confirmação com dois botões.</p>
+                <button class="btn btn-outline" id="openConfirm">Abrir Confirmação</button>
+            </div>
+
+            <!-- Tooltip -->
+            <div class="demo-card glass">
+                <h4>Tooltips</h4>
+                <div class="demo-row tooltip-demo">
+                    <span class="tooltip-container">
+                        <button class="btn btn-ghost">Topo</button>
+                        <span class="tooltip tooltip-top">Tooltip no topo</span>
+                    </span>
+                    <span class="tooltip-container">
+                        <button class="btn btn-ghost">Direita</button>
+                        <span class="tooltip tooltip-right">Tooltip à direita</span>
+                    </span>
+                    <span class="tooltip-container">
+                        <button class="btn btn-ghost">Baixo</button>
+                        <span class="tooltip tooltip-bottom">Tooltip embaixo</span>
+                    </span>
+                    <span class="tooltip-container">
+                        <button class="btn btn-ghost">Esquerda</button>
+                        <span class="tooltip tooltip-left">Tooltip à esquerda</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Dropdown -->
+            <div class="demo-card glass">
+                <h4>Dropdown</h4>
+                <div class="dropdown" id="dropdown">
+                    <button class="btn btn-outline dropdown-toggle">
+                        <span>Selecione uma opção</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu glass">
+                        <a href="#" class="dropdown-item"><i class="fas fa-user"></i> Perfil</a>
+                        <a href="#" class="dropdown-item"><i class="fas fa-cog"></i> Configurações</a>
+                        <a href="#" class="dropdown-item"><i class="fas fa-help"></i> Ajuda</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popover -->
+            <div class="demo-card glass">
+                <h4>Popover</h4>
+                <div class="popover-container" id="popover">
+                    <button class="btn btn-secondary">Clique para Popover</button>
+                    <div class="popover glass">
+                        <div class="popover-header">
+                            <h5>Notificações</h5>
+                            <button class="popover-close"><i class="fas fa-times"></i></button>
+                        </div>
+                        <div class="popover-body">
+                            <div class="popover-item">
+                                <div class="popover-icon glass-xs"><i class="fas fa-bell"></i></div>
+                                <div>
+                                    <p>Nova mensagem recebida</p>
+                                    <span>Há 2 minutos</span>
+                                </div>
+                            </div>
+                            <div class="popover-item">
+                                <div class="popover-icon glass-xs"><i class="fas fa-star"></i></div>
+                                <div>
+                                    <p>Você ganhou uma conquista!</p>
+                                    <span>Há 1 hora</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popover-footer">
+                            <a href="#">Ver todas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Toast / Notificação -->
+            <div class="demo-card glass">
+                <h4>Toast / Notificação</h4>
+                <div class="demo-row">
+                    <button class="btn btn-primary" id="toastSuccess">Sucesso</button>
+                    <button class="btn btn-outline" id="toastError">Erro</button>
+                    <button class="btn btn-ghost" id="toastInfo">Info</button>
+                </div>
+                <div class="toast-container" id="toastContainer"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: NAVEGAÇÃO                                             -->
+    <!-- ============================================================ -->
+    <section class="section" id="navegacao">
+        <div class="section-header">
+            <span class="section-tag">05</span>
+            <h2>Navegação</h2>
+            <p>Componentes de navegação como breadcrumbs, paginação e tabs.</p>
+        </div>
+
+        <div class="demo-grid">
+            <!-- Breadcrumbs -->
+            <div class="demo-card glass">
+                <h4>Breadcrumbs</h4>
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="#"><i class="fas fa-home"></i></a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Eletrônicos</a></li>
+                        <li aria-current="page">Smartphones</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <!-- Paginação -->
+            <div class="demo-card glass">
+                <h4>Paginação</h4>
+                <nav class="pagination" aria-label="Paginação">
+                    <a href="#" class="page-link glass-xs"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class="page-link glass-xs active">1</a>
+                    <a href="#" class="page-link glass-xs">2</a>
+                    <a href="#" class="page-link glass-xs">3</a>
+                    <span class="page-link glass-xs page-dots">...</span>
+                    <a href="#" class="page-link glass-xs">10</a>
+                    <a href="#" class="page-link glass-xs"><i class="fas fa-chevron-right"></i></a>
+                </nav>
+            </div>
+
+            <!-- Sidebar Mock -->
+            <div class="demo-card glass">
+                <h4>Sidebar / Menu Lateral</h4>
+                <div class="sidebar-mock">
+                    <a href="#" class="sidebar-item active">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="#" class="sidebar-item">
+                        <i class="fas fa-users"></i>
+                        <span>Usuários</span>
+                    </a>
+                    <a href="#" class="sidebar-item">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Vendas</span>
+                        <span class="badge badge-primary">3</span>
+                    </a>
+                    <a href="#" class="sidebar-item">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Relatórios</span>
+                    </a>
+                    <a href="#" class="sidebar-item">
+                        <i class="fas fa-cog"></i>
+                        <span>Configurações</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Step Progress -->
+            <div class="demo-card glass">
+                <h4>Passos / Stepper</h4>
+                <div class="stepper">
+                    <div class="step completed">
+                        <div class="step-number"><i class="fas fa-check"></i></div>
+                        <div class="step-label">
+                            <span>Carrinho</span>
+                            <small>Itens adicionados</small>
+                        </div>
+                    </div>
+                    <div class="step active">
+                        <div class="step-number">2</div>
+                        <div class="step-label">
+                            <span>Pagamento</span>
+                            <small>Escolha o método</small>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-label">
+                            <span>Confirmação</span>
+                            <small>Revise o pedido</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: ALERTAS                                               -->
+    <!-- ============================================================ -->
+    <section class="section" id="alertas">
+        <div class="section-header">
+            <span class="section-tag">06</span>
+            <h2>Alertas</h2>
+            <p>Diferentes tipos de alertas para feedback ao usuário.</p>
+        </div>
+
+        <div class="demo-grid alerts-grid">
+            <div class="alert alert-success glass">
+                <i class="fas fa-check-circle"></i>
+                <div class="alert-content">
+                    <strong>Sucesso!</strong>
+                    <p>Operação realizada com sucesso.</p>
+                </div>
+                <button class="alert-close"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="alert alert-error glass">
+                <i class="fas fa-exclamation-circle"></i>
+                <div class="alert-content">
+                    <strong>Erro!</strong>
+                    <p>Ocorreu um erro ao processar sua solicitação.</p>
+                </div>
+                <button class="alert-close"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="alert alert-warning glass">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div class="alert-content">
+                    <strong>Atenção!</strong>
+                    <p>Sua sessão irá expirar em 5 minutos.</p>
+                </div>
+                <button class="alert-close"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="alert alert-info glass">
+                <i class="fas fa-info-circle"></i>
+                <div class="alert-content">
+                    <strong>Informação</strong>
+                    <p>Nova atualização disponível para download.</p>
+                </div>
+                <button class="alert-close"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="alert glass">
+                <i class="fas fa-bell"></i>
+                <div class="alert-content">
+                    <strong>Notificação</strong>
+                    <p>Você tem 3 mensagens não lidas.</p>
+                </div>
+                <button class="alert-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: BADGES & TAGS                                         -->
+    <!-- ============================================================ -->
+    <section class="section" id="badges">
+        <div class="section-header">
+            <span class="section-tag">07</span>
+            <h2>Badges & Tags</h2>
+            <p>Badges, status indicators e tags para categorização.</p>
+        </div>
+
+        <div class="demo-grid">
+            <div class="demo-card glass">
+                <h4>Badges de Cor</h4>
+                <div class="demo-row">
+                    <span class="badge badge-primary">Primário</span>
+                    <span class="badge badge-secondary">Secundário</span>
+                    <span class="badge badge-success">Sucesso</span>
+                    <span class="badge badge-warning">Atenção</span>
+                    <span class="badge badge-error">Erro</span>
+                    <span class="badge badge-info">Info</span>
+                </div>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Badges Outline</h4>
+                <div class="demo-row">
+                    <span class="badge badge-outline badge-primary">Design</span>
+                    <span class="badge badge-outline badge-success">Front-end</span>
+                    <span class="badge badge-outline badge-warning">Back-end</span>
+                    <span class="badge badge-outline badge-info">DevOps</span>
+                </div>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Badges com Ícone</h4>
+                <div class="demo-row">
+                    <span class="badge badge-primary"><i class="fas fa-check"></i> Verificado</span>
+                    <span class="badge badge-success"><i class="fas fa-clock"></i> Online</span>
+                    <span class="badge badge-warning"><i class="fas fa-star"></i> Destaque</span>
+                    <span class="badge badge-error"><i class="fas fa-bolt"></i> Urgente</span>
+                </div>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Badges de Tamanho</h4>
+                <div class="demo-row">
+                    <span class="badge badge-primary badge-sm">Pequeno</span>
+                    <span class="badge badge-primary">Médio</span>
+                    <span class="badge badge-primary badge-lg">Grande</span>
+                </div>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Status Online</h4>
+                <div class="demo-row">
+                    <div class="status-demo">
+                        <span class="status-indicator online"></span>
+                        <span>Online</span>
+                    </div>
+                    <div class="status-demo">
+                        <span class="status-indicator idle"></span>
+                        <span>Ausente</span>
+                    </div>
+                    <div class="status-demo">
+                        <span class="status-indicator dnd"></span>
+                        <span>Ocupado</span>
+                    </div>
+                    <div class="status-demo">
+                        <span class="status-indicator offline"></span>
+                        <span>Offline</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Badge em Botão</h4>
+                <div class="demo-row">
+                    <button class="btn btn-primary">
+                        Notificações
+                        <span class="badge badge-error badge-sm">3</span>
+                    </button>
+                    <button class="btn btn-outline">
+                        Mensagens
+                        <span class="badge badge-primary badge-sm">12</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: LOADERS                                               -->
+    <!-- ============================================================ -->
+    <section class="section" id="loaders">
+        <div class="section-header">
+            <span class="section-tag">08</span>
+            <h2>Loaders & Spinners</h2>
+            <p>Indicadores de carregamento com estilo glassmorphism.</p>
+        </div>
+
+        <div class="demo-grid">
+            <div class="demo-card glass">
+                <h4>Spinner Circular</h4>
+                <div class="demo-row">
+                    <div class="spinner"></div>
+                    <div class="spinner spinner-sm"></div>
+                    <div class="spinner spinner-lg"></div>
+                    <div class="spinner spinner-primary"></div>
+                </div>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Spinner com Label</h4>
+                <div class="demo-row">
+                    <div class="spinner-label">
+                        <div class="spinner"></div>
+                        <span>Carregando...</span>
+                    </div>
+                    <div class="spinner-label">
+                        <div class="spinner spinner-sm"></div>
+                        <span>Processando</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Pulse / Skeleton</h4>
+                <div class="demo-row">
+                    <div class="skeleton-card">
+                        <div class="skeleton-img"></div>
+                        <div class="skeleton-line w-75"></div>
+                        <div class="skeleton-line w-50"></div>
+                        <div class="skeleton-line w-90"></div>
+                    </div>
+                    <div class="skeleton-card">
+                        <div class="skeleton-avatar"></div>
+                        <div class="skeleton-line w-60"></div>
+                        <div class="skeleton-line w-40"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Dots / Bar</h4>
+                <div class="demo-row">
+                    <div class="dots-loader">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="bar-loader">
+                        <div class="bar-loader-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Full Page Overlay</h4>
+                <p>Overlay de carregamento para página inteira.</p>
+                <button class="btn btn-secondary" id="showLoader">Mostrar Loader</button>
+                <div class="loader-overlay" id="loaderOverlay">
+                    <div class="loader-content glass">
+                        <div class="spinner spinner-lg"></div>
+                        <span>Carregando...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: TABELAS                                               -->
+    <!-- ============================================================ -->
+    <section class="section" id="tabelas">
+        <div class="section-header">
+            <span class="section-tag">09</span>
+            <h2>Tabelas</h2>
+            <p>Tabelas com estilo glass para exibição de dados.</p>
+        </div>
+
+        <div class="demo-grid">
+            <div class="demo-card glass table-card">
+                <h4>Tabela Simples</h4>
+                <div class="table-wrapper">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Cargo</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-user">
+                                    <img src="https://i.pravatar.cc/40?img=1" alt="User">
+                                    <span>João Silva</span>
+                                </td>
+                                <td>Desenvolvedor</td>
+                                <td>joao@email.com</td>
+                                <td><span class="badge badge-success badge-sm">Ativo</span></td>
+                                <td><button class="btn-icon glass-xs"><i class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="table-user">
+                                    <img src="https://i.pravatar.cc/40?img=5" alt="User">
+                                    <span>Maria Santos</span>
+                                </td>
+                                <td>Designer</td>
+                                <td>maria@email.com</td>
+                                <td><span class="badge badge-success badge-sm">Ativo</span></td>
+                                <td><button class="btn-icon glass-xs"><i class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="table-user">
+                                    <img src="https://i.pravatar.cc/40?img=8" alt="User">
+                                    <span>Pedro Costa</span>
+                                </td>
+                                <td>Gerente</td>
+                                <td>pedro@email.com</td>
+                                <td><span class="badge badge-warning badge-sm">Pendente</span></td>
+                                <td><button class="btn-icon glass-xs"><i class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="table-user">
+                                    <img src="https://i.pravatar.cc/40?img=12" alt="User">
+                                    <span>Ana Oliveira</span>
+                                </td>
+                                <td>Analista</td>
+                                <td>ana@email.com</td>
+                                <td><span class="badge badge-error badge-sm">Inativo</span></td>
+                                <td><button class="btn-icon glass-xs"><i class="fas fa-ellipsis-v"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="demo-card glass table-card">
+                <h4>Tabela com Checkbox</h4>
+                <div class="table-wrapper">
+                    <table class="table table-checkbox">
+                        <thead>
+                            <tr>
+                                <th><label class="form-checkbox"><input type="checkbox"><span class="checkmark"></span></label></th>
+                                <th>Produto</th>
+                                <th>Preço</th>
+                                <th>Estoque</th>
+                                <th>Vendas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><label class="form-checkbox"><input type="checkbox"><span class="checkmark"></span></label></td>
+                                <td>Notebook Pro</td>
+                                <td>R$ 4.999</td>
+                                <td>32</td>
+                                <td><div class="stats-bar"><div class="stats-bar-fill" style="width: 80%;"></div></div></td>
+                            </tr>
+                            <tr>
+                                <td><label class="form-checkbox"><input type="checkbox"><span class="checkmark"></span></label></td>
+                                <td>Mouse Wireless</td>
+                                <td>R$ 199</td>
+                                <td>128</td>
+                                <td><div class="stats-bar"><div class="stats-bar-fill" style="width: 45%;"></div></div></td>
+                            </tr>
+                            <tr>
+                                <td><label class="form-checkbox"><input type="checkbox"><span class="checkmark"></span></label></td>
+                                <td>Teclado Mecânico</td>
+                                <td>R$ 599</td>
+                                <td>56</td>
+                                <td><div class="stats-bar"><div class="stats-bar-fill" style="width: 62%;"></div></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: BARRAS DE PROGRESSO                                   -->
+    <!-- ============================================================ -->
+    <section class="section" id="progresso">
+        <div class="section-header">
+            <span class="section-tag">10</span>
+            <h2>Barras de Progresso</h2>
+            <p>Indicadores de progresso com diferentes estilos.</p>
+        </div>
+
+        <div class="demo-grid">
+            <div class="demo-card glass">
+                <h4>Progresso Padrão</h4>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%;">
+                        <span class="progress-label">75%</span>
+                    </div>
+                </div>
+                <div class="progress-bar progress-success">
+                    <div class="progress-fill" style="width: 100%;">
+                        <span class="progress-label">Completo</span>
+                    </div>
+                </div>
+                <div class="progress-bar progress-warning">
+                    <div class="progress-fill" style="width: 45%;">
+                        <span class="progress-label">45%</span>
+                    </div>
+                </div>
+                <div class="progress-bar progress-error">
+                    <div class="progress-fill" style="width: 20%;">
+                        <span class="progress-label">20%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Progresso com Degradê</h4>
+                <div class="progress-bar progress-gradient">
+                    <div class="progress-fill" style="width: 60%;"></div>
+                </div>
+                <div class="progress-bar progress-gradient">
+                    <div class="progress-fill" style="width: 85%;"></div>
+                </div>
+                <div class="progress-bar progress-gradient">
+                    <div class="progress-fill" style="width: 35%;"></div>
+                </div>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Progresso Circular</h4>
+                <div class="demo-row">
+                    <div class="circular-progress" data-progress="75">
+                        <svg viewBox="0 0 36 36">
+                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <path class="circle-fill" stroke-dasharray="75, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <text x="18" y="20.35" class="circle-text">75%</text>
+                        </svg>
+                    </div>
+                    <div class="circular-progress" data-progress="100">
+                        <svg viewBox="0 0 36 36">
+                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <path class="circle-fill circle-success" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <text x="18" y="20.35" class="circle-text"><i class="fas fa-check"></i></text>
+                        </svg>
+                    </div>
+                    <div class="circular-progress" data-progress="33">
+                        <svg viewBox="0 0 36 36">
+                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <path class="circle-fill circle-warning" stroke-dasharray="33, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <text x="18" y="20.35" class="circle-text">33%</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: ABAS & ACCORDION                                     -->
+    <!-- ============================================================ -->
+    <section class="section" id="abas">
+        <div class="section-header">
+            <span class="section-tag">11</span>
+            <h2>Abas & Accordion</h2>
+            <p>Componentes de navegação por abas e acordeão.</p>
+        </div>
+
+        <div class="demo-grid">
+            <div class="demo-card glass">
+                <h4>Abas (Tabs)</h4>
+                <div class="tabs">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="tab1">Descrição</button>
+                        <button class="tab-btn" data-tab="tab2">Avaliações</button>
+                        <button class="tab-btn" data-tab="tab3">Detalhes</button>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tab-panel active" id="tab1">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="tab-panel" id="tab2">
+                            <p>★★★★★ 4.8/5 - Baseado em 128 avaliações. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        </div>
+                        <div class="tab-panel" id="tab3">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Accordion</h4>
+                <div class="accordion">
+                    <div class="accordion-item active">
+                        <button class="accordion-header">
+                            <span>O que é Glassmorphism?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p>Glassmorphism é um estilo de design que simula o efeito de vidro fosco, combinando transparência, blur e sombras para criar uma aparência moderna e elegante.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Como usar este template?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p>Basta copiar os estilos CSS e a estrutura HTML desejada. Todos os componentes são modulares e podem ser usados independentemente.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>É responsivo?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p>Sim! Todo o design system foi construído com responsividade em mente, adaptando-se perfeitamente a dispositivos móveis, tablets e desktops.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: LISTAS                                                -->
+    <!-- ============================================================ -->
+    <section class="section" id="listas">
+        <div class="section-header">
+            <span class="section-tag">12</span>
+            <h2>Listas</h2>
+            <p>Diferentes estilos de listas para exibição de conteúdo.</p>
+        </div>
+
+        <div class="demo-grid">
+            <div class="demo-card glass">
+                <h4>Lista com Ícones</h4>
+                <ul class="list list-icons">
+                    <li><i class="fas fa-check-circle" style="color: var(--success);"></i> Design responsivo</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--success);"></i> Performance otimizada</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--success);"></i> Código modular</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--success);"></i> Fácil customização</li>
+                </ul>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Lista com Avatar</h4>
+                <ul class="list list-avatar">
+                    <li>
+                        <img src="https://i.pravatar.cc/40?img=3" alt="User">
+                        <div>
+                            <strong>Lucas Mendes</strong>
+                            <span>Comentou no seu post</span>
+                        </div>
+                        <small>5 min</small>
+                    </li>
+                    <li>
+                        <img src="https://i.pravatar.cc/40?img=7" alt="User">
+                        <div>
+                            <strong>Carla Souza</strong>
+                            <span>Enviou uma solicitação</span>
+                        </div>
+                        <small>15 min</small>
+                    </li>
+                    <li>
+                        <img src="https://i.pravatar.cc/40?img=9" alt="User">
+                        <div>
+                            <strong>Rafael Lima</strong>
+                            <span>Compartilhou um arquivo</span>
+                        </div>
+                        <small>1 hora</small>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Lista Ordenada</h4>
+                <ol class="list list-ordered">
+                    <li><span class="list-number">1</span> Planejamento do projeto</li>
+                    <li><span class="list-number">2</span> Design e prototipação</li>
+                    <li><span class="list-number">3</span> Desenvolvimento front-end</li>
+                    <li><span class="list-number">4</span> Testes e deploy</li>
+                </ol>
+            </div>
+
+            <div class="demo-card glass">
+                <h4>Lista de Arquivos</h4>
+                <ul class="list list-files">
+                    <li>
+                        <i class="fas fa-file-pdf" style="color: #e74c3c;"></i>
+                        <div>
+                            <strong>relatorio-2024.pdf</strong>
+                            <span>2.4 MB</span>
+                        </div>
+                        <button class="btn-icon glass-xs"><i class="fas fa-download"></i></button>
+                    </li>
+                    <li>
+                        <i class="fas fa-file-image" style="color: #2ecc71;"></i>
+                        <div>
+                            <strong>banner-principal.png</strong>
+                            <span>1.8 MB</span>
+                        </div>
+                        <button class="btn-icon glass-xs"><i class="fas fa-download"></i></button>
+                    </li>
+                    <li>
+                        <i class="fas fa-file-code" style="color: #3498db;"></i>
+                        <div>
+                            <strong>app.js</strong>
+                            <span>12 KB</span>
+                        </div>
+                        <button class="btn-icon glass-xs"><i class="fas fa-download"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SEÇÃO: RODAPÉ                                                -->
+    <!-- ============================================================ -->
+    <footer class="footer glass" id="rodape">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo">
+                    <i class="fas fa-cube"></i>
+                    <span>Glass UI</span>
+                </a>
+                <p>Um modelo de site premium com design system glassmorphism. Código aberto e gratuito para uso em seus projetos.</p>
+                <div class="footer-social">
+                    <a href="#" class="glass-xs"><i class="fab fa-github"></i></a>
+                    <a href="#" class="glass-xs"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="glass-xs"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="glass-xs"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Componentes</h4>
+                <ul>
+                    <li><a href="#botoes">Botões</a></li>
+                    <li><a href="#cards">Cards</a></li>
+                    <li><a href="#formularios">Formulários</a></li>
+                    <li><a href="#modais">Modais</a></li>
+                    <li><a href="#tabelas">Tabelas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Documentação</a></li>
+                    <li><a href="#">Exemplos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Reportar Bug</a></li>
+                    <li><a href="#">Contribuir</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Glass UI Kit. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================ -->
+    <!-- MODAIS                                                        -->
+    <!-- ============================================================ -->
+
+    <!-- Modal Padrão -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal glass">
+            <div class="modal-header">
+                <h3>Título do Modal</h3>
+                <button class="modal-close" id="closeModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Este é um modal com efeito glassmorphism. O fundo escurece com um overlay translúcido e o modal aparece com animação suave.</p>
+                <p>Você pode fechar clicando no X, no botão abaixo ou clicando fora do modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-ghost" id="closeModal2">Cancelar</button>
+                <button class="btn btn-primary">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmação -->
+    <div class="modal-overlay" id="confirmOverlay">
+        <div class="modal modal-sm glass">
+            <div class="modal-body" style="text-align: center;">
+                <div class="modal-icon glass-sm">
+                    <i class="fas fa-exclamation-triangle" style="color: var(--warning);"></i>
+                </div>
+                <h3>Tem certeza?</h3>
+                <p>Esta ação não poderá ser desfeita. Deseja continuar?</p>
+            </div>
+            <div class="modal-footer" style="justify-content: center;">
+                <button class="btn btn-ghost" id="closeConfirm">Cancelar</button>
+                <button class="btn btn-primary" style="background: var(--error);">Sim, excluir</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- JAVASCRIPT                                                    -->
+    <!-- ============================================================ -->
+    <script>
+        // === NAVBAR TOGGLE ===
+        document.getElementById('navToggle')?.addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // === NAVBAR SCROLL ===
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // === SMOOTH SCROLL ===
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+                // Fecha menu mobile
+                document.getElementById('navLinks')?.classList.remove('active');
+            });
+        });
+
+        // === NAV LINK ACTIVE ===
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // === MODAL PADRÃO ===
+        const modalOverlay = document.getElementById('modalOverlay');
+        document.getElementById('openModal')?.addEventListener('click', () => modalOverlay.classList.add('active'));
+        document.getElementById('closeModal')?.addEventListener('click', () => modalOverlay.classList.remove('active'));
+        document.getElementById('closeModal2')?.addEventListener('click', () => modalOverlay.classList.remove('active'));
+        modalOverlay?.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) modalOverlay.classList.remove('active');
+        });
+
+        // === MODAL CONFIRMAÇÃO ===
+        const confirmOverlay = document.getElementById('confirmOverlay');
+        document.getElementById('openConfirm')?.addEventListener('click', () => confirmOverlay.classList.add('active'));
+        document.getElementById('closeConfirm')?.addEventListener('click', () => confirmOverlay.classList.remove('active'));
+        confirmOverlay?.addEventListener('click', (e) => {
+            if (e.target === confirmOverlay) confirmOverlay.classList.remove('active');
+        });
+
+        // === DROPDOWN ===
+        const dropdown = document.getElementById('dropdown');
+        dropdown?.querySelector('.dropdown-toggle')?.addEventListener('click', function(e) {
+            e.stopPropagation();
+            dropdown.classList.toggle('active');
+        });
+        document.addEventListener('click', () => dropdown?.classList.remove('active'));
+
+        // === POPOVER ===
+        const popover = document.getElementById('popover');
+        popover?.querySelector('.btn')?.addEventListener('click', function(e) {
+            e.stopPropagation();
+            popover.classList.toggle('active');
+        });
+        popover?.querySelector('.popover-close')?.addEventListener('click', () => popover.classList.remove('active'));
+        document.addEventListener('click', (e) => {
+            if (popover && !popover.contains(e.target)) popover.classList.remove('active');
+        });
+
+        // === TABS ===
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const parent = this.closest('.tabs');
+                parent.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                parent.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+                this.classList.add('active');
+                document.getElementById(this.dataset.tab).classList.add('active');
+            });
+        });
+
+        // === ACCORDION ===
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const item = this.closest('.accordion-item');
+                const isActive = item.classList.contains('active');
+                // Fecha todos
+                item.closest('.accordion').querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+                if (!isActive) item.classList.add('active');
+            });
+        });
+
+        // === TOASTS ===
+        function showToast(type, message) {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `toast toast-${type} glass`;
+            const icons = { success: 'fa-check-circle', error: 'fa-exclamation-circle', info: 'fa-info-circle' };
+            toast.innerHTML = `
+                <i class="fas ${icons[type] || icons.info}"></i>
+                <span>${message}</span>
+                <button class="toast-close"><i class="fas fa-times"></i></button>
+            `;
+            container.appendChild(toast);
+            setTimeout(() => toast.classList.add('show'), 10);
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 4000);
+            toast.querySelector('.toast-close').addEventListener('click', () => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            });
+        }
+
+        document.getElementById('toastSuccess')?.addEventListener('click', () => showToast('success', 'Operação realizada com sucesso!'));
+        document.getElementById('toastError')?.addEventListener('click', () => showToast('error', 'Erro ao processar solicitação.'));
+        document.getElementById('toastInfo')?.addEventListener('click', () => showToast('info', 'Nova atualização disponível.'));
+
+        // === ALERT CLOSE ===
+        document.querySelectorAll('.alert-close').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.closest('.alert').style.display = 'none';
+            });
+        });
+
+        // === LOADER OVERLAY ===
+        document.getElementById('showLoader')?.addEventListener('click', function() {
+            const overlay = document.getElementById('loaderOverlay');
+            overlay.classList.add('active');
+            setTimeout(() => overlay.classList.remove('active'), 3000);
+        });
+
+        // === COPY CODE ===
+        document.querySelectorAll('.btn-copy').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const code = this.dataset.code;
+                navigator.clipboard.writeText(code).then(() => {
+                    const icon = this.querySelector('i');
+                    icon.className = 'fas fa-check';
+                    setTimeout(() => { icon.className = 'fas fa-copy'; }, 2000);
+                });
+            });
+        });
+
+        // === COUNTER ANIMATION ===
+        function animateCounters() {
+            document.querySelectorAll('.stat-number').forEach(el => {
+                const target = el.dataset.count;
+                const isPercent = target.includes('%');
+                const num = parseInt(target);
+                if (isNaN(num)) {
+                    el.textContent = target;
+                    return;
+                }
+                let current = 0;
+                const increment = Math.ceil(num / 60);
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= num) {
+                        current = num;
+                        clearInterval(timer);
+                    }
+                    el.textContent = isPercent ? current + '%' : current + '+';
+                }, 25);
+            });
+        }
+
+        // Intersection Observer para contadores
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            observer.observe(heroStats);
+        }
+
+        // === PASSWORD TOGGLE ===
+        document.querySelector('.input-toggle')?.addEventListener('click', function() {
+            const input = this.closest('.input-group').querySelector('input');
+            const icon = this.querySelector('i');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.className = 'fas fa-eye-slash';
+            } else {
+                input.type = 'password';
+                icon.className = 'fas fa-eye';
+            }
+        });
+
+        // === RANGE SLIDER ===
+        document.querySelector('.form-range')?.addEventListener('input', function() {
+            this.closest('.input-group').querySelector('.range-value').textContent = this.value + '%';
+        });
+
+        // === BUTTON GROUP ===
+        document.querySelectorAll('.btn-group .btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.closest('.btn-group').querySelectorAll('.btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // === TAG REMOVE ===
+        document.querySelectorAll('.tag i.fa-times').forEach(icon => {
+            icon.addEventListener('click', function() {
+                this.closest('.tag').remove();
+            });
+        });
+
+        // === TAG ADD ===
+        document.querySelector('.tag-add')?.addEventListener('click', function() {
+            const tag = prompt('Digite o nome da tag:');
+            if (tag) {
+                const container = this.closest('.tags-container');
+                const newTag = document.createElement('span');
+                newTag.className = 'tag glass-xs';
+                newTag.innerHTML = `${tag} <i class="fas fa-times"></i>`;
+                container.insertBefore(newTag, this);
+                newTag.querySelector('i.fa-times').addEventListener('click', function() {
+                    this.closest('.tag').remove();
+                });
+            }
+        });
+
+        // === KEYBOARD: ESC para fechar modais ===
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                modalOverlay?.classList.remove('active');
+                confirmOverlay?.classList.remove('active');
+            }
+        });
+
+        // === THEME TOGGLE (Dark / Light) ===
+        const themeToggle = document.querySelector('.nav-actions .btn-icon');
+        const themeIcon = themeToggle?.querySelector('i');
+
+        function getPreferredTheme() {
+            const saved = localStorage.getItem('glass-ui-theme');
+            if (saved) return saved;
+            return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('glass-ui-theme', theme);
+            if (themeIcon) {
+                themeIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+                themeToggle.title = theme === 'light' ? 'Modo escuro' : 'Modo claro';
+            }
+        }
+
+        // Inicializa o tema
+        setTheme(getPreferredTheme());
+
+        themeToggle?.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            setTheme(current === 'light' ? 'dark' : 'light');
+        });
+
+        console.log('🚀 Glass UI Kit carregado com sucesso!');
+    </script>
+</body>
+</html>

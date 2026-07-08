@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minimalism — Design System & Style Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<script>
+(function() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark' || savedTheme === 'light') {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  }
+})();
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme') || 'light';
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+}
+</script>
+
+<header class="sg-header">
+  <div class="container">
+    <h1>Minimalism</h1>
+    <p>Design System & Style Guide — A complete collection of UI components following minimal, clean, and premium design principles.</p>
+  </div>
+</header>
+
+<nav class="sg-sticky-nav">
+  <div class="container">
+    <div class="sg-nav-content">
+      <span class="sg-brand">✦ Minimalism</span>
+      <div class="sg-flex-center">
+        <div class="sg-nav-links">
+          <a href="#colors">Colors</a>
+          <a href="#typography">Type</a>
+          <a href="#buttons">Buttons</a>
+          <a href="#cards">Cards</a>
+          <a href="#forms">Forms</a>
+          <a href="#modals">Modals</a>
+          <a href="#sections">Sections</a>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">☾☀︎</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+
+<section class="sg-section" id="colors">
+  <h2 class="sg-section-title">01. Colors</h2>
+  <p class="sg-section-desc">The color palette defines the visual identity. All colors are available as CSS custom properties.</p>
+
+  <h3 class="sg-subsection-title">Primary & Secondary</h3>
+  <div class="sg-color-palette">
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#1a1a1a;"></div><div class="sg-color-swatch-label">--color-primary<span>#1a1a1a</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#333333;"></div><div class="sg-color-swatch-label">--color-primary-light<span>#333333</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#000000;"></div><div class="sg-color-swatch-label">--color-primary-dark<span>#000000</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#c4b8a8;"></div><div class="sg-color-swatch-label">--color-secondary<span>#c4b8a8</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#d4cabc;"></div><div class="sg-color-swatch-label">--color-secondary-light<span>#d4cabc</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#a89a88;"></div><div class="sg-color-swatch-label">--color-secondary-dark<span>#a89a88</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#c47a5a;"></div><div class="sg-color-swatch-label">--color-accent<span>#c47a5a</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#d49474;"></div><div class="sg-color-swatch-label">--color-accent-light<span>#d49474</span></div></div>
+  </div>
+
+  <h3 class="sg-subsection-title">Grays</h3>
+  <div class="sg-color-palette">
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#f7f5f0;"></div><div class="sg-color-swatch-label">--gray-50<span>#f7f5f0</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#efede8;"></div><div class="sg-color-swatch-label">--gray-100<span>#efede8</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#e3e0d9;"></div><div class="sg-color-swatch-label">--gray-200<span>#e3e0d9</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#d4d0c8;"></div><div class="sg-color-swatch-label">--gray-300<span>#d4d0c8</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#b8b3a9;"></div><div class="sg-color-swatch-label">--gray-400<span>#b8b3a9</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#9a958b;"></div><div class="sg-color-swatch-label">--gray-500<span>#9a958b</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#7a756b;"></div><div class="sg-color-swatch-label">--gray-600<span>#7a756b</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#5a554d;"></div><div class="sg-color-swatch-label">--gray-700<span>#5a554d</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#3a3630;"></div><div class="sg-color-swatch-label">--gray-800<span>#3a3630</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#1a1815;"></div><div class="sg-color-swatch-label">--gray-900<span>#1a1815</span></div></div>
+  </div>
+
+  <h3 class="sg-subsection-title">Semantic Colors</h3>
+  <div class="sg-color-palette">
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#7a9a7a;"></div><div class="sg-color-swatch-label">--color-success<span>#7a9a7a</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#c45a5a;"></div><div class="sg-color-swatch-label">--color-error<span>#c45a5a</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#c4a05a;"></div><div class="sg-color-swatch-label">--color-warning<span>#c4a05a</span></div></div>
+    <div class="sg-color-swatch"><div class="sg-color-swatch-color" style="background:#5a8aaa;"></div><div class="sg-color-swatch-label">--color-info<span>#5a8aaa</span></div></div>
+  </div>
+</section>
+
+<section class="sg-section" id="typography">
+  <h2 class="sg-section-title">02. Typography</h2>
+  <p class="sg-section-desc">Clean, readable typography using Inter font family with a consistent type scale.</p>
+
+  <div class="sg-demo sg-demo-vertical">
+    <h1 class="heading-1">Heading 1 — The quick brown fox</h1>
+    <h2 class="heading-2">Heading 2 — The quick brown fox</h2>
+    <h3 class="heading-3">Heading 3 — The quick brown fox</h3>
+    <h4 class="heading-4">Heading 4 — The quick brown fox</h4>
+    <h5 class="heading-5">Heading 5 — The quick brown fox</h5>
+    <h6 class="heading-6">Heading 6 — The quick brown fox</h6>
+  </div>
+
+  <div class="sg-demo sg-demo-vertical">
+    <p class="body-large">Body Large — Larger text for important paragraphs and introductions.</p>
+    <p>Body Base — Default body text with regular weight and comfortable line height.</p>
+    <p class="body-small">Body Small — Secondary information and metadata.</p>
+    <p class="caption">Caption — Labels, timestamps, and other small metadata.</p>
+  </div>
+</section>
+
+<section class="sg-section" id="buttons">
+  <h2 class="sg-section-title">03. Buttons</h2>
+  <p class="sg-section-desc">Versatile button system with multiple variants, sizes, and states.</p>
+
+  <h3 class="sg-subsection-title">Variants</h3>
+  <div class="sg-demo">
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-accent">Accent</button>
+    <button class="btn btn-outline">Outline</button>
+    <button class="btn btn-outline-secondary">Outline Sec</button>
+    <button class="btn btn-ghost">Ghost</button>
+    <button class="btn btn-link">Link</button>
+  </div>
+
+  <h3 class="sg-subsection-title">Sizes</h3>
+  <div class="sg-demo">
+    <button class="btn btn-primary btn-xs">XS</button>
+    <button class="btn btn-primary btn-sm">Small</button>
+    <button class="btn btn-primary">Default</button>
+    <button class="btn btn-primary btn-lg">Large</button>
+    <button class="btn btn-primary btn-xl">XL</button>
+  </div>
+
+  <h3 class="sg-subsection-title">States & Modifiers</h3>
+  <div class="sg-demo">
+    <button class="btn btn-primary" disabled>Disabled</button>
+    <button class="btn btn-outline" disabled>Disabled</button>
+    <button class="btn btn-primary btn-block sg-max-400">Full Width</button>
+  </div>
+
+  <h3 class="sg-subsection-title">Icon Buttons</h3>
+  <div class="sg-demo">
+    <button class="btn btn-icon btn-primary" aria-label="Settings">⚙</button>
+    <button class="btn btn-icon btn-primary btn-lg" aria-label="Search">🔍</button>
+    <button class="btn btn-primary">⬇ Download</button>
+    <button class="btn btn-outline">👤 Profile</button>
+  </div>
+
+  <h3 class="sg-subsection-title">Button Groups</h3>
+  <div class="sg-demo">
+    <div class="btn-group">
+      <button class="btn btn-outline">Left</button>
+      <button class="btn btn-outline">Center</button>
+      <button class="btn btn-outline">Right</button>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-primary">Save</button>
+      <button class="btn btn-accent">Delete</button>
+    </div>
+  </div>
+
+  <h3 class="sg-subsection-title">Loading State</h3>
+  <div class="sg-demo">
+    <button class="btn btn-primary" disabled><span class="spinner spinner-sm spinner-white"></span> Loading</button>
+    <button class="btn btn-outline" disabled><span class="spinner spinner-sm"></span> Processing</button>
+  </div>
+</section>
+
+<section class="sg-section" id="cards">
+  <h2 class="sg-section-title">04. Cards</h2>
+  <p class="sg-section-desc">Flexible card components in various styles.</p>
+
+  <div class="sg-card-grid">
+    <div class="card">
+      <div class="card-header sg-flex-between"><span class="sg-fw-600">Default</span><span class="badge badge-primary">New</span></div>
+      <div class="card-body"><p class="card-text">Standard card with header, body, and footer.</p></div>
+      <div class="card-footer"><button class="btn btn-sm btn-ghost">Cancel</button><button class="btn btn-sm btn-primary">Save</button></div>
+    </div>
+
+    <div class="card card-elevated">
+      <div class="card-body"><h3 class="card-title">Elevated</h3><p class="card-text">Shadow with no border for a lifted look.</p></div>
+    </div>
+
+    <div class="card card-flat">
+      <div class="card-body"><h3 class="card-title">Flat</h3><p class="card-text">Subtle background, no border or shadow.</p></div>
+    </div>
+
+    <div class="card card-bordered">
+      <div class="card-body"><h3 class="card-title">Bordered</h3><p class="card-text">Thicker border for emphasis.</p></div>
+    </div>
+
+    <div class="card card-accent">
+      <div class="card-body"><h3 class="card-title">Accent</h3><p class="card-text">Colored left border accent.</p></div>
+    </div>
+
+    <div class="card card-primary-border">
+      <div class="card-body"><h3 class="card-title">Top Border</h3><p class="card-text">Colored top border accent.</p></div>
+    </div>
+  </div>
+
+  <h3 class="sg-subsection-title">Interactive Cards</h3>
+  <div class="card-grid">
+    <div class="card card-hover card-interactive">
+      <div class="demo-img-placeholder card-image"><span>Image Placeholder</span></div>
+      <div class="card-body">
+        <h3 class="card-title">Interactive Card</h3>
+        <p class="card-text">Hover to see elevation effect.</p>
+        <div class="sg-mt-4 sg-flex-center sg-flex-wrap">
+          <span class="badge badge-ghost">Design</span>
+          <span class="badge badge-ghost">UI</span>
+          <span class="badge badge-ghost">Minimal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-hover card-interactive flex flex-col justify-center">
+      <div class="card-body">
+        <div class="sg-flex-center sg-avatar-mb">
+          <div class="avatar avatar-lg sg-avatar-demo">JD</div>
+          <div>
+            <div class="sg-fw-600">John Doe</div>
+            <div class="body-small">Product Designer</div>
+          </div>
+        </div>
+        <p class="card-text">"Less truly is more."</p>
+      </div>
+    </div>
+
+    <div class="card card-hover card-interactive">
+      <div class="card-body">
+        <h3 class="card-title">Project Status</h3>
+        <div class="progress-demo">
+          <div class="progress-label"><span>Design</span><span>75%</span></div>
+          <div class="progress progress-lg"><div class="progress-bar" style="width:75%;"></div></div>
+        </div>
+        <div class="progress-demo">
+          <div class="progress-label"><span>Dev</span><span>45%</span></div>
+          <div class="progress"><div class="progress-bar" style="width:45%;"></div></div>
+        </div>
+        <div class="progress-demo">
+          <div class="progress-label"><span>Testing</span><span>20%</span></div>
+          <div class="progress progress-sm"><div class="progress-bar" style="width:20%;"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="sg-subsection-title">Horizontal Card</h3>
+  <div class="card card-horizontal">
+    <div class="demo-img-placeholder sg-img-placeholder"><span>Image</span></div>
+    <div class="card-body">
+      <h3 class="card-title">Horizontal Layout</h3>
+      <p class="card-text">Image on left, content on right. Perfect for blog posts and listings.</p>
+      <div class="sg-mt-4"><button class="btn btn-sm btn-outline">Read More</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="sg-section" id="forms">
+  <h2 class="sg-section-title">05. Forms</h2>
+  <p class="sg-section-desc">Clean, accessible form elements with consistent styling.</p>
+
+  <div class="sg-max-500">
+    <div class="form-group">
+      <label class="form-label form-label-required" for="name">Full Name</label>
+      <input class="form-input" type="text" id="name" placeholder="Enter your full name" />
+    </div>
+    <div class="form-group">
+      <label class="form-label form-label-required" for="email">Email Address</label>
+      <input class="form-input" type="email" id="email" placeholder="you@example.com" />
+      <span class="form-help">We'll never share your email.</span>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="subject">Subject</label>
+      <select class="form-select" id="subject">
+        <option value="">Select a subject</option>
+        <option value="general">General Inquiry</option>
+        <option value="support">Technical Support</option>
+        <option value="billing">Billing</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-textarea" id="message" placeholder="Type your message..." rows="3"></textarea>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Error State</label>
+      <input class="form-input form-input-error" type="text" value="Invalid value" />
+      <span class="form-error">This field has an error.</span>
+    </div>
+  </div>
+
+  <h3 class="sg-subsection-title">Checkboxes & Radios</h3>
+  <div class="sg-demo sg-flex-col">
+    <label class="form-check"><input class="form-check-input" type="checkbox" checked /><span class="form-check-label">Remember me</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" /><span class="form-check-label">Subscribe to newsletter</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" disabled /><span class="form-check-label">Disabled</span></label>
+  </div>
+  <div class="sg-demo sg-flex-col">
+    <label class="form-check"><input class="form-check-input" type="radio" name="radio" checked /><span class="form-check-label">Option A</span></label>
+    <label class="form-check"><input class="form-check-input" type="radio" name="radio" /><span class="form-check-label">Option B</span></label>
+  </div>
+
+  <h3 class="sg-subsection-title">Toggle / Switch</h3>
+  <div class="sg-demo sg-flex-col">
+    <label class="form-toggle"><input class="form-toggle-input" type="checkbox" checked /><span class="form-toggle-track"></span><span class="form-check-label">Notifications</span></label>
+    <label class="form-toggle"><input class="form-toggle-input" type="checkbox" /><span class="form-toggle-track"></span><span class="form-check-label">Dark Mode</span></label>
+    <label class="form-toggle"><input class="form-toggle-input" type="checkbox" disabled /><span class="form-toggle-track"></span><span class="form-check-label">Disabled</span></label>
+  </div>
+
+  <h3 class="sg-subsection-title">Input Groups</h3>
+  <div class="sg-demo sg-demo-vertical">
+    <div class="input-group sg-max-400">
+      <div class="input-group-prepend">https://</div>
+      <input class="form-input" type="text" placeholder="example.com" />
+      <button class="btn btn-primary">Go</button>
+    </div>
+    <div class="input-group sg-max-400">
+      <input class="form-input" type="text" placeholder="Search..." />
+      <button class="btn btn-primary">Search</button>
+    </div>
+  </div>
+</section>
+
+<section class="sg-section" id="alerts">
+  <h2 class="sg-section-title">06. Alerts</h2>
+  <p class="sg-section-desc">Contextual messages for user feedback.</p>
+  <div class="alert alert-info"><svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><div class="alert-content"><div class="alert-title">Info</div>This is an informational message.</div></div>
+  <div class="alert alert-success"><svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><div class="alert-content"><div class="alert-title">Success</div>Changes saved successfully.</div><button class="alert-dismiss">&times;</button></div>
+  <div class="alert alert-warning"><svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><div class="alert-content"><div class="alert-title">Warning</div>Please review your information.</div></div>
+  <div class="alert alert-error"><svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><div class="alert-content"><div class="alert-title">Error</div>An error occurred processing your request.</div></div>
+</section>
+
+<section class="sg-section" id="badges">
+  <h2 class="sg-section-title">07. Badges & Tags</h2>
+  <p class="sg-section-desc">Small indicators for status, counts, and categorization.</p>
+  <div class="sg-demo">
+    <span class="badge badge-primary">Primary</span>
+    <span class="badge badge-secondary">Secondary</span>
+    <span class="badge badge-accent">Accent</span>
+    <span class="badge badge-success">Success</span>
+    <span class="badge badge-warning">Warning</span>
+    <span class="badge badge-error">Error</span>
+    <span class="badge badge-outline">Outline</span>
+    <span class="badge badge-ghost">Ghost</span>
+  </div>
+  <div class="sg-demo">
+    <span class="badge badge-sm badge-primary">Small</span>
+    <span class="badge badge-primary">Default</span>
+    <span class="badge badge-lg badge-primary">Large</span>
+    <span class="badge badge-dot badge-success">Online</span>
+    <span class="badge badge-dot badge-error">Offline</span>
+  </div>
+  <div class="sg-demo">
+    <span class="tag">Design</span>
+    <span class="tag">Development</span>
+    <span class="tag">Marketing <button class="tag-remove">&times;</button></span>
+    <span class="tag">UI/UX <button class="tag-remove">&times;</button></span>
+  </div>
+</section>
+
+<section class="sg-section" id="navigation">
+  <h2 class="sg-section-title">08. Navigation</h2>
+  <p class="sg-section-desc">Navbar, sidebar, breadcrumbs, and pagination.</p>
+
+  <div class="sg-nav-demo">
+    <nav class="navbar">
+      <a href="#" class="navbar-brand">✦ Minimalism</a>
+      <div class="navbar-nav">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#" class="nav-link">Features</a>
+        <a href="#" class="nav-link">Pricing</a>
+        <a href="#" class="nav-link">About</a>
+      </div>
+      <div class="navbar-actions">
+        <button class="btn btn-ghost btn-sm">Log In</button>
+        <button class="btn btn-primary btn-sm">Sign Up</button>
+      </div>
+    </nav>
+  </div>
+
+  <div class="sg-demo sg-flex-col">
+    <nav class="breadcrumb">
+      <span class="breadcrumb-item"><a href="#">Home</a></span>
+      <span class="breadcrumb-item"><a href="#">Products</a></span>
+      <span class="breadcrumb-item active">Minimalism</span>
+    </nav>
+  </div>
+
+  <div class="sg-demo">
+    <div class="pagination">
+      <a href="#" class="pagination-item disabled">‹</a>
+      <a href="#" class="pagination-item active">1</a>
+      <a href="#" class="pagination-item">2</a>
+      <a href="#" class="pagination-item">3</a>
+      <a href="#" class="pagination-item">4</a>
+      <a href="#" class="pagination-item">5</a>
+      <a href="#" class="pagination-item">›</a>
+    </div>
+  </div>
+</section>
+
+<section class="sg-section" id="modals">
+  <h2 class="sg-section-title">09. Modals</h2>
+  <p class="sg-section-desc">Click to open modal dialogs.</p>
+  <div class="sg-demo">
+    <button class="btn btn-primary" onclick="document.getElementById('modal-demo').classList.add('active')">Open Modal</button>
+    <button class="btn btn-outline" onclick="document.getElementById('modal-sm-demo').classList.add('active')">Small Modal</button>
+    <button class="btn btn-outline-secondary" onclick="document.getElementById('modal-lg-demo').classList.add('active')">Large Modal</button>
+  </div>
+
+  <div class="modal-backdrop" id="modal-demo">
+    <div class="modal">
+      <div class="modal-header"><h3 class="modal-title">Confirm Action</h3><button class="modal-close" onclick="this.closest('.modal-backdrop').classList.remove('active')">&times;</button></div>
+      <div class="modal-body"><p>Are you sure? This cannot be undone.</p></div>
+      <div class="modal-footer"><button class="btn btn-ghost" onclick="this.closest('.modal-backdrop').classList.remove('active')">Cancel</button><button class="btn btn-accent">Confirm</button></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="modal-sm-demo">
+    <div class="modal modal-sm">
+      <div class="modal-body sg-text-center"><div class="sg-emoji-lg">🎉</div><h3 class="modal-title">Success!</h3><p class="body-small">Changes saved.</p></div>
+      <div class="modal-footer justify-center"><button class="btn btn-primary" onclick="this.closest('.modal-backdrop').classList.remove('active')">Great!</button></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="modal-lg-demo">
+    <div class="modal modal-lg">
+      <div class="modal-header"><h3 class="modal-title">Edit Profile</h3><button class="modal-close" onclick="this.closest('.modal-backdrop').classList.remove('active')">&times;</button></div>
+      <div class="modal-body"><p>Profile editing form would go here.</p></div>
+      <div class="modal-footer"><button class="btn btn-ghost" onclick="this.closest('.modal-backdrop').classList.remove('active')">Cancel</button><button class="btn btn-primary">Save</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="sg-section" id="tooltips">
+  <h2 class="sg-section-title">10. Tooltips</h2>
+  <p class="sg-section-desc">Hover over buttons to see tooltips.</p>
+  <div class="sg-demo">
+    <span class="tooltip-wrapper"><button class="btn btn-sm btn-outline">Top</button><span class="tooltip tooltip-top">Tooltip on top</span></span>
+    <span class="tooltip-wrapper"><button class="btn btn-sm btn-outline">Bottom</button><span class="tooltip tooltip-bottom">Tooltip on bottom</span></span>
+    <span class="tooltip-wrapper"><button class="btn btn-sm btn-outline">Left</button><span class="tooltip tooltip-left">Tooltip on left</span></span>
+    <span class="tooltip-wrapper"><button class="btn btn-sm btn-outline">Right</button><span class="tooltip tooltip-right">Tooltip on right</span></span>
+  </div>
+</section>
+
+<section class="sg-section" id="toasts">
+  <h2 class="sg-section-title">11. Toasts</h2>
+  <p class="sg-section-desc">Temporary notifications for user feedback.</p>
+  <div class="sg-demo sg-demo-vertical">
+    <div class="toast-container demo sg-toast-static">
+      <div class="toast demo"><svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><div class="toast-content"><div class="toast-title">Success</div>Saved.</div><button class="toast-close">&times;</button></div>
+      <div class="toast demo"><svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="var(--color-error)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><div class="toast-content"><div class="toast-title">Error</div>Try again.</div><button class="toast-close">&times;</button></div>
+      <div class="toast demo"><button class="btn btn-sm btn-primary" onclick="showToast()">Show Toast</button></div>
+    </div>
+  </div>
+  <script>
+    function showToast() {
+      const container = document.querySelector('.toast-container.demo');
+      const toast = document.createElement('div'); toast.className = 'toast';
+      toast.innerHTML = '<svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><div class="toast-content">Toast!</div><button class="toast-close">&times;</button>';
+      container.appendChild(toast);
+      toast.querySelector('.toast-close').onclick = () => toast.remove();
+      setTimeout(() => toast.remove(), 3000);
+    }
+  </script>
+</section>
+
+<section class="sg-section" id="avatars">
+  <h2 class="sg-section-title">12. Avatars</h2>
+  <p class="sg-section-desc">User avatars in various sizes and groups.</p>
+  <div class="sg-demo">
+    <div class="avatar avatar-xs sg-avatar-demo">AB</div>
+    <div class="avatar avatar-sm sg-avatar-sec">CD</div>
+    <div class="avatar sg-avatar-acc">EF</div>
+    <div class="avatar avatar-lg sg-avatar-demo">GH</div>
+    <div class="avatar avatar-xl sg-avatar-sec">IJ</div>
+    <div class="avatar avatar-2xl sg-avatar-acc">KL</div>
+  </div>
+  <div class="sg-demo">
+    <div class="avatar-group">
+      <div class="avatar sg-avatar-acc">JD</div>
+      <div class="avatar sg-avatar-demo">AS</div>
+      <div class="avatar sg-avatar-sec">MK</div>
+      <div class="avatar avatar-more">+3</div>
+    </div>
+  </div>
+</section>
+
+<section class="sg-section" id="progress">
+  <h2 class="sg-section-title">13. Progress Bars</h2>
+  <p class="sg-section-desc">Loading and completion indicators.</p>
+  <div class="progress-demo"><div class="progress-label"><span>Default</span><span>60%</span></div><div class="progress"><div class="progress-bar" style="width:60%;"></div></div></div>
+  <div class="progress-demo"><div class="progress-label"><span>Small</span><span>40%</span></div><div class="progress progress-sm"><div class="progress-bar" style="width:40%;"></div></div></div>
+  <div class="progress-demo"><div class="progress-label"><span>Large</span><span>80%</span></div><div class="progress progress-lg"><div class="progress-bar" style="width:80%;"></div></div></div>
+  <div class="progress-demo"><div class="progress-label"><span>Animated</span><span>50%</span></div><div class="progress progress-lg"><div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%;"></div></div></div>
+</section>
+
+<section class="sg-section" id="tables">
+  <h2 class="sg-section-title">14. Tables</h2>
+  <p class="sg-section-desc">Data tables with multiple styles.</p>
+  <div class="table-wrapper">
+    <table class="table">
+      <thead><tr><th>Name</th><th>Role</th><th>Status</th><th>Email</th></tr></thead>
+      <tbody>
+        <tr><td>João Bergamin</td><td>Designer</td><td><span class="badge badge-success">Active</span></td><td>joao@example.com</td></tr>
+        <tr><td>Ana Silva</td><td>Developer</td><td><span class="badge badge-success">Active</span></td><td>ana@example.com</td></tr>
+        <tr><td>Carlos Mendes</td><td>PM</td><td><span class="badge badge-warning">Pending</span></td><td>carlos@example.com</td></tr>
+        <tr><td>Mariana Costa</td><td>Marketing</td><td><span class="badge badge-error">Inactive</span></td><td>mariana@example.com</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="sg-section" id="tabs">
+  <h2 class="sg-section-title">15. Tabs & Pills</h2>
+  <p class="sg-section-desc">Tabbed interfaces and pill filters.</p>
+  <div class="sg-nav-demo">
+    <div class="tabs sg-px-4">
+      <button class="tab-item active">Overview</button>
+      <button class="tab-item">Details</button>
+      <button class="tab-item">Settings</button>
+    </div>
+    <div class="tab-content sg-py-6"><p class="body-small sg-mb-0">Overview tab content.</p></div>
+  </div>
+  <div class="sg-demo">
+    <div class="pills">
+      <button class="pill active">All</button>
+      <button class="pill">Design</button>
+      <button class="pill">Dev</button>
+      <button class="pill">Marketing</button>
+    </div>
+  </div>
+</section>
+
+<section class="sg-section" id="accordion">
+  <h2 class="sg-section-title">16. Accordion</h2>
+  <p class="sg-section-desc">Expandable content sections.</p>
+  <div class="accordion sg-max-600">
+    <div class="accordion-item">
+      <button class="accordion-header active" onclick="toggleAccordion(this)">What is Minimalism?<svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="accordion-body active">A design system with CSS custom properties, reusable components, and minimal design principles.</div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">How to customize?<svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="accordion-body">Override CSS variables in <code class="sg-code">:root</code>. Example: <code class="sg-code">--color-primary: #your-color;</code></div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)">Is it responsive?<svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="accordion-body">Yes! Responsive breakpoints at 1024px, 768px, and 480px.</div>
+    </div>
+  </div>
+  <script>function toggleAccordion(h){h.classList.toggle('active');h.nextElementSibling.classList.toggle('active');}</script>
+</section>
+
+<section class="sg-section" id="dropdown">
+  <h2 class="sg-section-title">17. Dropdown</h2>
+  <p class="sg-section-desc">Click to open dropdown menus.</p>
+  <div class="sg-demo">
+    <div class="dropdown" id="dd1">
+      <button class="btn btn-outline" onclick="toggleDropdown('dd1')">Actions ▼</button>
+      <div class="dropdown-menu">
+        <div class="dropdown-header">Options</div>
+        <a href="#" class="dropdown-item">Edit</a>
+        <a href="#" class="dropdown-item">Duplicate</a>
+        <a href="#" class="dropdown-item">Share</a>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item sg-text-accent">Delete</a>
+      </div>
+    </div>
+    <div class="dropdown" id="dd2">
+      <button class="btn btn-primary" onclick="toggleDropdown('dd2')">Profile ▼</button>
+      <div class="dropdown-menu">
+        <div class="sg-flex-center sg-p-3"><div class="avatar avatar-sm sg-avatar-demo">JD</div><div><div class="body-small sg-fw-600">John Doe</div><div class="caption sg-caption-normal">john@example.com</div></div></div>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">Settings</a>
+        <a href="#" class="dropdown-item">Sign Out</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggleDropdown(id) { document.getElementById(id).classList.toggle('active'); }
+    document.addEventListener('click', function(e) { if (!e.target.closest('.dropdown')) document.querySelectorAll('.dropdown.active').forEach(d => d.classList.remove('active')); });
+  </script>
+</section>
+
+<section class="sg-section" id="sections">
+  <h2 class="sg-section-title">18. Page Sections</h2>
+  <p class="sg-section-desc">Hero, features, stats, pricing, testimonials, empty state, footer.</p>
+
+  <h3 class="sg-subsection-title">Hero</h3>
+  <div class="sg-panel-no-pad">
+    <div class="hero hero-sm">
+      <h1 class="hero-title">Design with Purpose</h1>
+      <p class="hero-subtitle">A clean, minimal design system for beautiful interfaces.</p>
+      <div class="hero-actions"><button class="btn btn-primary btn-lg">Get Started</button><button class="btn btn-outline btn-lg">Learn More</button></div>
+    </div>
+  </div>
+
+  <h3 class="sg-subsection-title">Features</h3>
+  <div class="features">
+    <div class="feature"><div class="feature-icon">✦</div><h3 class="feature-title">Clean Design</h3><p class="feature-text">Crafted with attention to whitespace and hierarchy.</p></div>
+    <div class="feature"><div class="feature-icon">◆</div><h3 class="feature-title">Modular</h3><p class="feature-text">Independent, reusable components for any interface.</p></div>
+    <div class="feature"><div class="feature-icon">●</div><h3 class="feature-title">Responsive</h3><p class="feature-text">Mobile-first. Looks great on every device.</p></div>
+  </div>
+
+  <h3 class="sg-subsection-title">Stats</h3>
+  <div class="sg-panel">
+    <div class="stats">
+      <div class="stat"><div class="stat-value">99.9%</div><div class="stat-label">Uptime</div></div>
+      <div class="stat"><div class="stat-value">10K+</div><div class="stat-label">Users</div></div>
+      <div class="stat"><div class="stat-value">500+</div><div class="stat-label">Components</div></div>
+      <div class="stat"><div class="stat-value">4.9</div><div class="stat-label">Rating</div></div>
+    </div>
+  </div>
+
+  <h3 class="sg-subsection-title">Testimonial</h3>
+  <div class="sg-panel">
+    <div class="testimonial">
+      <p class="testimonial-text">This design system transformed how our team builds interfaces. The consistency is remarkable.</p>
+      <div class="testimonial-author"><div class="avatar sg-avatar-demo">JB</div><div><div class="testimonial-name">João Bergamin</div><div class="testimonial-role">Product Designer</div></div></div>
+    </div>
+  </div>
+
+  <h3 class="sg-subsection-title">Pricing</h3>
+  <div class="pricing-grid">
+    <div class="pricing-card"><div class="pricing-name">Starter</div><div class="pricing-price">$0</div><div class="pricing-period">Free</div><div class="pricing-features"><div class="pricing-feature">✓ Up to 3 projects</div><div class="pricing-feature">✓ Basic components</div></div><button class="btn btn-outline btn-block">Get Started</button></div>
+    <div class="pricing-card featured"><span class="pricing-badge">Popular</span><div class="pricing-name">Pro</div><div class="pricing-price">$29</div><div class="pricing-period">/month</div><div class="pricing-features"><div class="pricing-feature">✓ Unlimited projects</div><div class="pricing-feature">✓ All components</div><div class="pricing-feature">✓ Priority support</div></div><button class="btn btn-primary btn-block">Subscribe</button></div>
+    <div class="pricing-card"><div class="pricing-name">Enterprise</div><div class="pricing-price">$99</div><div class="pricing-period">/month</div><div class="pricing-features"><div class="pricing-feature">✓ Everything in Pro</div><div class="pricing-feature">✓ Dedicated support</div></div><button class="btn btn-outline btn-block">Contact Us</button></div>
+  </div>
+
+  <h3 class="sg-subsection-title">Empty State</h3>
+  <div class="sg-dashed">
+    <div class="empty-state"><svg class="empty-state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><h3 class="empty-state-title">No items yet</h3><p class="empty-state-text">Get started by adding your first project.</p><button class="btn btn-primary">Add Project</button></div>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2 class="sg-section-title">19. Loaders & Skeletons</h2>
+  <p class="sg-section-desc">Loading states and skeleton screens.</p>
+  <div class="sg-demo">
+    <div class="spinner spinner-sm"></div>
+    <div class="spinner"></div>
+    <div class="spinner spinner-lg"></div>
+    <div class="sg-flex-inline-center"><div class="spinner spinner-white spinner-sm"></div><span>Loading...</span></div>
+  </div>
+  <div class="sg-grid-2">
+    <div class="card"><div class="skeleton skeleton-card sg-skeleton-card-img"></div><div class="card-body"><div class="skeleton skeleton-title"></div><div class="skeleton skeleton-text"></div><div class="skeleton skeleton-text"></div></div></div>
+    <div class="sg-flex-avatar-row"><div class="skeleton skeleton-avatar"></div><div class="sg-flex-1"><div class="skeleton skeleton-title"></div><div class="skeleton skeleton-text"></div></div></div>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2 class="sg-section-title">20. Lists</h2>
+  <p class="sg-section-desc">Various list styles.</p>
+  <div class="sg-nav-demo sg-max-400">
+    <div class="list">
+      <a href="#" class="list-item"><span class="list-item-icon">👤</span><div class="list-item-content"><div class="list-item-title">My Profile</div><div class="list-item-subtitle">Edit your info</div></div></a>
+      <a href="#" class="list-item"><span class="list-item-icon">⬇</span><div class="list-item-content"><div class="list-item-title">Downloads</div><div class="list-item-subtitle">Your files</div></div></a>
+      <a href="#" class="list-item"><span class="list-item-icon">⚙</span><div class="list-item-content"><div class="list-item-title">Settings</div><div class="list-item-subtitle">Preferences</div></div></a>
+    </div>
+  </div>
+  <div class="sg-demo sg-demo-flex-start">
+    <ul class="list-bullet"><li>Clean design philosophy</li><li>Reusable components</li><li>Responsive & mobile-first</li></ul>
+    <ol class="list-numbered"><li>Install stylesheet</li><li>Add components</li><li>Customize with CSS vars</li></ol>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2 class="sg-section-title">21. Dividers</h2>
+  <p class="sg-section-desc">Visual separators.</p>
+  <div class="sg-demo sg-demo-vertical">
+    <p class="body-small">Above</p><hr class="divider" /><p class="body-small">Below</p>
+    <div class="divider-label">OR</div>
+    <hr class="divider-sm" /><hr class="divider-lg" />
+  </div>
+</section>
+
+</main>
+
+<div class="sg-footer-bar">
+  <div class="container">
+    <p class="body-small sg-mb-2">Minimalism Design System — Built with ❤️</p>
+    <p class="caption">Full documentation in <code class="sg-code">README.md</code></p>
+  </div>
+</div>
+
+</body>
+</html>

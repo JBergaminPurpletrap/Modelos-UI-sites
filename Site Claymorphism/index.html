@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claymorphism UI — Design System & Component Library</title>
+  <meta name="description" content="A complete Claymorphism design system with 36+ components, dark/light theme, and interactive examples.">
+  <link rel="stylesheet" href="css/claymorphism.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="navbar-brand">
+        Clay UI
+      </a>
+      <div class="navbar-nav">
+        <a href="#buttons" class="nav-link">Buttons</a>
+        <a href="#cards" class="nav-link">Cards</a>
+        <a href="#forms" class="nav-link">Forms</a>
+        <a href="#modals" class="nav-link">Modals</a>
+        <a href="#components" class="nav-link">Components</a>
+        <button class="btn btn-sm btn-icon btn-primary" data-theme-toggle aria-label="Toggle theme" style="margin-left:8px;">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </div>
+      <button class="navbar-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="section">
+    <div class="container" style="text-align:center; padding: var(--clay-space-3xl) 0;">
+      <h1 style="font-size:3rem; margin-bottom:var(--clay-space-sm);">Claymorphism Design System</h1>
+      <p style="font-size:var(--clay-font-lg); color:var(--clay-text-light); max-width:600px; margin:0 auto var(--clay-space-xl);">
+        A complete, premium UI component library with the soft, tactile aesthetic of clay.
+        Explore 36+ components with light/dark theme support.
+      </p>
+      <div class="flex-center gap-md" style="flex-wrap:wrap;">
+        <a href="#buttons" class="btn btn-primary btn-lg">Explore Components</a>
+        <a href="#pricing" class="btn btn-outline btn-lg">View Pricing</a>
+        <button class="btn btn-accent btn-lg" data-toast="success" data-toast-message="Welcome to Claymorphism! 🧱">Show Toast</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       1. BUTTONS
+       ============================================================ -->
+  <section id="buttons" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>🎨 Buttons</h2>
+        <p>7 color variants × 4 styles × 3 sizes — fully interactive with clay shadows and press states.</p>
+      </div>
+
+      <!-- ── Solid Colors ── -->
+      <h3 style="margin-bottom:var(--clay-space-md);">Solid Variants</h3>
+      <div class="flex flex-wrap gap-md" style="margin-bottom:var(--clay-space-2xl);">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-accent">Accent</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-info">Info</button>
+      </div>
+
+      <!-- ── Outline ── -->
+      <h3 style="margin-bottom:var(--clay-space-md);">Outline Variants</h3>
+      <div class="flex flex-wrap gap-md" style="margin-bottom:var(--clay-space-2xl);">
+        <button class="btn btn-outline">Outline</button>
+        <button class="btn btn-outline" style="color:var(--clay-accent-dark); border-color:var(--clay-accent);">Custom</button>
+        <button class="btn btn-outline" style="color:var(--clay-success-dark); border-color:var(--clay-success);">Success</button>
+        <button class="btn btn-outline" style="color:var(--clay-danger-dark); border-color:var(--clay-danger);">Danger</button>
+      </div>
+
+      <!-- ── Ghost ── -->
+      <h3 style="margin-bottom:var(--clay-space-md);">Ghost Variants</h3>
+      <div class="flex flex-wrap gap-md" style="margin-bottom:var(--clay-space-2xl);">
+        <button class="btn btn-ghost">Ghost</button>
+        <button class="btn btn-ghost">Click Me</button>
+        <button class="btn btn-ghost">Cancel</button>
+      </div>
+
+      <!-- ── Sizes ── -->
+      <h3 style="margin-bottom:var(--clay-space-md);">Sizes</h3>
+      <div class="flex flex-wrap gap-md" style="margin-bottom:var(--clay-space-2xl);">
+        <button class="btn btn-primary btn-sm">Small</button>
+        <button class="btn btn-primary">Default</button>
+        <button class="btn btn-primary btn-lg">Large</button>
+        <button class="btn btn-primary btn-xl">X-Large</button>
+      </div>
+
+      <!-- ── Full Width ── -->
+      <h3 style="margin-bottom:var(--clay-space-md);">Full Width & Icon Buttons</h3>
+      <div class="flex flex-wrap gap-md" style="margin-bottom:var(--clay-space-md);">
+        <button class="btn btn-icon btn-primary btn-sm" aria-label="Search">🔍</button>
+        <button class="btn btn-icon btn-primary" aria-label="Settings">⚙️</button>
+        <button class="btn btn-icon btn-primary btn-lg" aria-label="Heart">❤️</button>
+        <button class="btn btn-primary">👍 Like</button>
+        <button class="btn btn-secondary">📎 Attach</button>
+        <button class="btn btn-accent">🚀 Launch</button>
+      </div>
+      <button class="btn btn-primary btn-block" style="margin-bottom:var(--clay-space-lg);">Full Width Button</button>
+
+      <!-- ── Button Group ── -->
+      <h3 style="margin-bottom:var(--clay-space-md);">Button Groups</h3>
+      <div class="flex flex-wrap gap-lg">
+        <div class="btn-group">
+          <button class="btn btn-primary">Left</button>
+          <button class="btn btn-primary">Center</button>
+          <button class="btn btn-primary">Right</button>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm">Day</button>
+          <button class="btn btn-secondary btn-sm">Week</button>
+          <button class="btn btn-secondary btn-sm">Month</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider"></div>
+
+  <!-- ============================================================
+       2. CARDS
+       ============================================================ -->
+  <section id="cards" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>📇 Cards</h2>
+        <p>Standard, interactive, flat, image, testimonial, and pricing cards with hover effects.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-header">
+            <h4>Standard Card</h4>
+          </div>
+          <div class="card-body">
+            <p class="text-muted">This is a standard clay card with soft shadows and rounded corners. Perfect for content blocks.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary btn-sm">Action</button>
+          </div>
+        </div>
+
+        <div class="card card-interactive">
+          <div class="card-header">
+            <div class="flex-between">
+              <h4>Interactive Card</h4>
+              <span class="badge badge-primary">Clickable</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="text-muted">Click or tap this card — it has a press effect. Great for selection UIs.</p>
+          </div>
+          <div class="card-footer">
+            <span class="text-sm text-muted">Click to select</span>
+          </div>
+        </div>
+
+        <div class="card card-flat">
+          <div class="card-header">
+            <h4>Flat Card</h4>
+          </div>
+          <div class="card-body">
+            <p class="text-muted">Starts flat with a border, rises on hover with shadow. Minimalist style.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-ghost btn-sm">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Card with Image ── -->
+      <div class="grid grid-3" style="margin-top:var(--clay-space-xl);">
+        <div class="card">
+          <div class="card-image" style="background:linear-gradient(135deg, var(--clay-primary-light), var(--clay-accent-light)); height:200px; display:flex; align-items:center; justify-content:center; font-size:3rem;">
+            🏔️
+          </div>
+          <div class="card-body">
+            <h4>Mountain View</h4>
+            <p class="text-muted">Beautiful landscape with clay-style image container. Hover for zoom effect.</p>
+          </div>
+          <div class="card-footer">
+            <div class="flex-between">
+              <span class="badge badge-success">New</span>
+              <button class="btn btn-primary btn-sm">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background:linear-gradient(135deg, var(--clay-secondary-light), var(--clay-info-light)); height:200px; display:flex; align-items:center; justify-content:center; font-size:3rem;">
+            🌊
+          </div>
+          <div class="card-body">
+            <h4>Ocean Sunset</h4>
+            <p class="text-muted">Card with an image placeholder and smooth hover scale animation.</p>
+          </div>
+          <div class="card-footer">
+            <div class="flex-between">
+              <span class="badge badge-info">Popular</span>
+              <button class="btn btn-secondary btn-sm">Explore</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Testimonial Card ── -->
+        <div class="testimonial">
+          <p class="testimonial-text">This claymorphism design system is absolutely stunning. The attention to detail on shadows and interactions is incredible.</p>
+          <div class="testimonial-author">
+            <div class="avatar avatar-accent">JD</div>
+            <div>
+              <div class="testimonial-name">Jane Doe</div>
+              <div class="testimonial-role">UX Designer, Clay Co.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider"></div>
+
+  <!-- ============================================================
+       3. FORMS & INPUTS
+       ============================================================ -->
+  <section id="forms" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>✏️ Forms & Inputs</h2>
+        <p>Text inputs, textareas, selects, checkboxes, radios, toggles, and input groups with validation states.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h4 style="margin-bottom:var(--clay-space-lg);">Input Fields</h4>
+          <div class="form-group">
+            <label class="form-label" for="name">Full Name</label>
+            <input type="text" id="name" class="form-input" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input type="email" id="email" class="form-input" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bio">Bio</label>
+            <textarea id="bio" class="form-textarea" placeholder="Tell us about yourself..."></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="country">Country</label>
+            <select id="country" class="form-select">
+              <option>Brazil</option>
+              <option>United States</option>
+              <option>Canada</option>
+              <option>Portugal</option>
+            </select>
+          </div>
+          <button class="btn btn-primary btn-block">Submit</button>
+        </div>
+
+        <div>
+          <div class="card" style="margin-bottom:var(--clay-space-lg);">
+            <h4 style="margin-bottom:var(--clay-space-lg);">Input Sizes & Validation</h4>
+            <div class="form-group">
+              <label class="form-label" for="small-input">Small Input</label>
+              <input type="text" id="small-input" class="form-input form-input-sm" placeholder="Small size">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="large-input">Large Input</label>
+              <input type="text" id="large-input" class="form-input form-input-lg" placeholder="Large size">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="error-input">Error State</label>
+              <input type="text" id="error-input" class="form-input error" placeholder="Invalid input" value="wrong@">
+              <span class="form-error">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="success-input">Success State</label>
+              <input type="text" id="success-input" class="form-input success" placeholder="Valid input" value="user@example.com">
+              <span class="form-success-text">Email is valid!</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4 style="margin-bottom:var(--clay-space-lg);">Input Group</h4>
+            <div class="form-group">
+              <label class="form-label">Price</label>
+              <div class="input-group">
+                <input type="text" class="form-input" placeholder="0.00">
+                <span class="input-addon">USD</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Domain</label>
+              <div class="input-group">
+                <input type="text" class="form-input" placeholder="mywebsite">
+                <span class="input-addon">.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Checkboxes, Radios, Toggles ── -->
+      <div class="grid grid-3" style="margin-top:var(--clay-space-xl);">
+        <div class="card">
+          <h4 style="margin-bottom:var(--clay-space-md);">Checkboxes</h4>
+          <div class="flex flex-col gap-sm">
+            <label class="form-check">
+              <input type="checkbox" checked>
+              <span>Option A</span>
+            </label>
+            <label class="form-check">
+              <input type="checkbox">
+              <span>Option B</span>
+            </label>
+            <label class="form-check">
+              <input type="checkbox">
+              <span>Option C</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-bottom:var(--clay-space-md);">Radio Buttons</h4>
+          <div class="flex flex-col gap-sm">
+            <label class="form-check">
+              <input type="radio" name="radio-group" checked>
+              <span>Plan Basic</span>
+            </label>
+            <label class="form-check">
+              <input type="radio" name="radio-group">
+              <span>Plan Pro</span>
+            </label>
+            <label class="form-check">
+              <input type="radio" name="radio-group">
+              <span>Plan Enterprise</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-bottom:var(--clay-space-md);">Toggle Switches</h4>
+          <div class="flex flex-col gap-md">
+            <label class="toggle">
+              <span>Notifications</span>
+              <input type="checkbox" checked>
+              <span class="toggle-track"><span class="toggle-thumb"></span></span>
+            </label>
+            <label class="toggle toggle-sm">
+              <span>Dark Mode</span>
+              <input type="checkbox">
+              <span class="toggle-track"><span class="toggle-thumb"></span></span>
+            </label>
+            <label class="toggle toggle-lg">
+              <span>Auto-save</span>
+              <input type="checkbox" checked>
+              <span class="toggle-track"><span class="toggle-thumb"></span></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider"></div>
+
+  <!-- ============================================================
+       4. MODALS
+       ============================================================ -->
+  <section id="modals" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>💬 Modals & Dialogs</h2>
+        <p>Animated modals with backdrop blur, multiple sizes, and accessible keyboard controls.</p>
+      </div>
+
+      <div class="flex-center gap-md" style="flex-wrap:wrap;">
+        <button class="btn btn-primary" data-modal-target="modal-small">Small Modal</button>
+        <button class="btn btn-primary" data-modal-target="modal-default">Default Modal</button>
+        <button class="btn btn-primary" data-modal-target="modal-large">Large Modal</button>
+      </div>
+
+      <!-- Small Modal -->
+      <div class="modal-overlay" id="modal-small">
+        <div class="modal modal-sm">
+          <div class="modal-header">
+            <h3>Quick Confirm</h3>
+            <button class="modal-close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure you want to proceed with this action?</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-ghost modal-close">Cancel</button>
+            <button class="btn btn-primary modal-close">Confirm</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Default Modal -->
+      <div class="modal-overlay" id="modal-default">
+        <div class="modal">
+          <div class="modal-header">
+            <h3>Subscribe to Newsletter</h3>
+            <button class="modal-close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Get weekly updates on design trends, UI components, and exclusive resources.</p>
+            <div class="form-group" style="margin-top:var(--clay-space-md);">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-input" placeholder="you@example.com">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-ghost modal-close">Skip</button>
+            <button class="btn btn-primary">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large Modal -->
+      <div class="modal-overlay" id="modal-large">
+        <div class="modal modal-lg">
+          <div class="modal-header">
+            <h3>Terms of Service</h3>
+            <button class="modal-close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h4>1. Acceptance of Terms</h4>
+            <p>By accessing this website, you agree to be bound by these terms of service. If you do not agree, do not use the service.</p>
+            <h4>2. User Responsibilities</h4>
+            <p>Users are responsible for maintaining the confidentiality of their accounts and for all activities that occur under their account.</p>
+            <h4>3. Intellectual Property</h4>
+            <p>All content, designs, and code provided in this template are licensed for personal and commercial use.</p>
+            <h4>4. Limitation of Liability</h4>
+            <p>The creators of this template shall not be liable for any damages arising from the use or inability to use this template.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-ghost modal-close">Decline</button>
+            <button class="btn btn-primary modal-close">Accept</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider"></div>
+
+  <!-- ============================================================
+       5. BADGES, ALERTS & TOOLTIPS
+       ============================================================ -->
+  <section id="components" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>🔖 Badges, Alerts & Tooltips</h2>
+        <p>Status indicators, notification badges, alert boxes with variants, and pure CSS tooltips.</p>
+      </div>
+
+      <!-- ── Badges ── -->
+      <h3 style="margin-bottom:var(--clay-space-md);">Badges</h3>
+      <div class="flex flex-wrap gap-md" style="margin-bottom:var(--clay-space-xl);">
+        <span class="badge">Default</span>
+        <span class="badge badge-primary">Primary</span>
+        <span class="badge badge-secondary">Secondary</span>
+        <span class="badge badge-accent">Accent</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-danger">Danger</span>
+        <span class="badge badge-info">Info</span>
+      </div>
+
+      <div class="flex flex-wrap gap-md" style="margin-bottom:var(--clay-space-2xl); align-items:center;">
+        <span class="badge badge-sm badge-primary">Small</span>
+        <span class="badge badge-lg badge-success">Large</span>
+        <span class="badge badge-dot badge-danger" style="margin-left:8px;"></span>
+        <span class="badge badge-dot badge-success" style="margin-left:8px;"></span>
+        <span style="position:relative; display:inline-block; margin-left:16px;">
+          🔔
+          <span class="badge badge-sm badge-danger" style="position:absolute; top:-8px; right:-12px;">3</span>
+        </span>
+      </div>
+
+      <!-- ── Alerts ── -->
+      <h3 style="margin-bottom:var(--clay-space-md);">Alerts</h3>
+      <div class="alert alert-primary">
+        <span class="alert-icon">ℹ️</span>
+        <div class="alert-content">
+          <div class="alert-title">Information</div>
+          <p class="alert-message">This is an informational alert with primary styling.</p>
+        </div>
+        <button class="alert-close">&times;</button>
+      </div>
+      <div class="alert alert-success">
+        <span class="alert-icon">✅</span>
+        <div class="alert-content">
+          <div class="alert-title">Success</div>
+          <p class="alert-message">Your changes have been saved successfully!</p>
+        </div>
+        <button class="alert-close">&times;</button>
+      </div>
+      <div class="alert alert-warning">
+        <span class="alert-icon">⚠️</span>
+        <div class="alert-content">
+          <div class="alert-title">Warning</div>
+          <p class="alert-message">Please review your input before submitting.</p>
+        </div>
+        <button class="alert-close">&times;</button>
+      </div>
+      <div class="alert alert-danger">
+        <span class="alert-icon">❌</span>
+        <div class="alert-content">
+          <div class="alert-title">Error</div>
+          <p class="alert-message">An unexpected error occurred. Please try again.</p>
+        </div>
+        <button class="alert-close">&times;</button>
+      </div>
+
+      <!-- ── Tooltips ── -->
+      <h3 style="margin-bottom:var(--clay-space-md); margin-top:var(--clay-space-xl);">Tooltips (Pure CSS)</h3>
+      <div class="flex flex-wrap gap-lg" style="margin-bottom:var(--clay-space-2xl);">
+        <span class="btn btn-primary btn-sm" data-tooltip="I'm on top!" data-tooltip-pos="top">Top</span>
+        <span class="btn btn-primary btn-sm" data-tooltip="I'm on bottom!" data-tooltip-pos="bottom">Bottom</span>
+        <span class="btn btn-primary btn-sm" data-tooltip="I'm on left!" data-tooltip-pos="left">Left</span>
+        <span class="btn btn-primary btn-sm" data-tooltip="I'm on right!" data-tooltip-pos="right">Right</span>
+        <span class="btn btn-primary btn-sm" data-tooltip="Default tooltip">Default</span>
+      </div>
+
+      <!-- ── Toast Triggers ── -->
+      <h3 style="margin-bottom:var(--clay-space-md);">Toast Notifications</h3>
+      <div class="flex flex-wrap gap-md" style="margin-bottom:var(--clay-space-2xl);">
+        <button class="btn btn-success" data-toast="success" data-toast-message="Operation completed successfully! ✅">Success Toast</button>
+        <button class="btn btn-danger" data-toast="error" data-toast-message="Something went wrong! ❌">Error Toast</button>
+        <button class="btn btn-warning" data-toast="warning" data-toast-message="Please be careful! ⚠️">Warning Toast</button>
+        <button class="btn btn-info" data-toast="info" data-toast-message="Here is some info ℹ️">Info Toast</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider"></div>
+
+  <!-- ============================================================
+       6. TABS & ACCORDIONS
+       ============================================================ -->
+  <section id="tabs-accordions" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>📑 Tabs & Accordions</h2>
+        <p>Horizontal and vertical tabs with smooth transitions, plus single/multi accordion panels.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <!-- ── Horizontal Tabs ── -->
+        <div class="tabs">
+          <div class="tab-list">
+            <button class="tab-item active" data-tab="tab1">Home</button>
+            <button class="tab-item" data-tab="tab2">Profile</button>
+            <button class="tab-item" data-tab="tab3">Settings</button>
+          </div>
+          <div class="tab-content active" data-tab-content="tab1">
+            <h4>Home Tab</h4>
+            <p class="text-muted">Welcome to the home tab content. Tabs provide an elegant way to organize content sections without navigation changes.</p>
+          </div>
+          <div class="tab-content" data-tab-content="tab2">
+            <h4>Profile Tab</h4>
+            <p class="text-muted">User profile information goes here. Tabs are fully accessible with click and keyboard interactions.</p>
+          </div>
+          <div class="tab-content" data-tab-content="tab3">
+            <h4>Settings Tab</h4>
+            <p class="text-muted">Configure your preferences and application settings from this panel.</p>
+          </div>
+        </div>
+
+        <!-- ── Accordion ── -->
+        <div class="accordion">
+          <div class="accordion-item active">
+            <button class="accordion-header">
+              <span>📦 What is Claymorphism?</span>
+              <span class="accordion-icon">▼</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                Claymorphism is a design style that mimics the appearance of clay — soft, rounded shapes with diffused shadows and subtle highlights that create a tactile, 3D feel.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>🎨 How do I customize colors?</span>
+              <span class="accordion-icon">▼</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                All colors are controlled via CSS custom properties in the <code class="inline-code">:root</code> section. Simply override <code class="inline-code">--clay-primary</code>, <code class="inline-code">--clay-bg</code>, etc.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>🌙 Does it support dark mode?</span>
+              <span class="accordion-icon">▼</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                Yes! The design system includes a full dark theme. Toggle it using the button in the navbar or add <code class="inline-code">data-theme="dark"</code> to the <code class="inline-code">html</code> tag.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Vertical Tabs ── -->
+      <h3 style="margin:var(--clay-space-2xl) 0 var(--clay-space-md);">Vertical Tabs</h3>
+      <div class="tabs tabs-vertical">
+        <div class="tab-list">
+          <button class="tab-item active" data-tab="vtab1">Overview</button>
+          <button class="tab-item" data-tab="vtab2">Features</button>
+          <button class="tab-item" data-tab="vtab3">Pricing</button>
+          <button class="tab-item" data-tab="vtab4">FAQ</button>
+        </div>
+        <div class="tab-content-wrap">
+          <div class="tab-content active" data-tab-content="vtab1">
+            <h4>Project Overview</h4>
+            <p class="text-muted">Vertical tabs are perfect for dashboards and settings panels with many navigation categories.</p>
+          </div>
+          <div class="tab-content" data-tab-content="vtab2">
+            <h4>Key Features</h4>
+            <p class="text-muted">Explore the rich feature set including 36+ components, dark/light themes, responsive design, and more.</p>
+          </div>
+          <div class="tab-content" data-tab-content="vtab3">
+            <h4>Pricing Plans</h4>
+            <p class="text-muted">View our flexible pricing options designed for individuals, teams, and enterprises.</p>
+          </div>
+          <div class="tab-content" data-tab-content="vtab4">
+            <h4>Frequently Asked Questions</h4>
+            <p class="text-muted">Find answers to common questions about setup, customization, and licensing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider"></div>
+
+  <!-- ============================================================
+       7. PROGRESS, PAGINATION & BREADCRUMBS
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>📊 Progress, Pagination & Breadcrumbs</h2>
+        <p>Animated progress bars, pagination controls, and breadcrumb navigation.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <!-- ── Progress ── -->
+        <div class="card">
+          <h4 style="margin-bottom:var(--clay-space-lg);">Progress Bars</h4>
+          <div class="progress-label">
+            <span>Project Completion</span>
+            <span>75%</span>
+          </div>
+          <div class="progress progress-lg" style="margin-bottom:var(--clay-space-lg);">
+            <div class="progress-bar" style="width:75%;"></div>
+          </div>
+          <div class="progress-label">
+            <span>Documents</span>
+            <span>45%</span>
+          </div>
+          <div class="progress" style="margin-bottom:var(--clay-space-lg);">
+            <div class="progress-bar progress-bar-info" style="width:45%;"></div>
+          </div>
+          <div class="progress-label">
+            <span>Storage</span>
+            <span>90%</span>
+          </div>
+          <div class="progress progress-sm" style="margin-bottom:var(--clay-space-lg);">
+            <div class="progress-bar progress-bar-warning" style="width:90%;"></div>
+          </div>
+          <div class="progress-label">
+            <span>Errors</span>
+            <span>20%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger" style="width:20%;"></div>
+          </div>
+        </div>
+
+        <div>
+          <!-- ── Pagination ── -->
+          <div class="card" style="margin-bottom:var(--clay-space-lg);">
+            <h4 style="margin-bottom:var(--clay-space-lg);">Pagination</h4>
+            <div class="pagination">
+              <button class="page-item disabled">‹</button>
+              <button class="page-item active">1</button>
+              <button class="page-item">2</button>
+              <button class="page-item">3</button>
+              <button class="page-item">…</button>
+              <button class="page-item">8</button>
+              <button class="page-item">›</button>
+            </div>
+          </div>
+
+          <!-- ── Breadcrumbs ── -->
+          <div class="card">
+            <h4 style="margin-bottom:var(--clay-space-lg);">Breadcrumbs</h4>
+            <nav class="breadcrumb" style="margin-bottom:var(--clay-space-md);">
+              <span class="breadcrumb-item"><a href="#">Home</a></span>
+              <span class="breadcrumb-separator">›</span>
+              <span class="breadcrumb-item"><a href="#">Products</a></span>
+              <span class="breadcrumb-separator">›</span>
+              <span class="breadcrumb-item"><a href="#">Category</a></span>
+              <span class="breadcrumb-separator">›</span>
+              <span class="breadcrumb-item active">Current Item</span>
+            </nav>
+            <nav class="breadcrumb">
+              <span class="breadcrumb-item"><a href="#">Dashboard</a></span>
+              <span class="breadcrumb-separator">›</span>
+              <span class="breadcrumb-item"><a href="#">Settings</a></span>
+              <span class="breadcrumb-separator">›</span>
+              <span class="breadcrumb-item active">Profile</span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider"></div>
+
+  <!-- ============================================================
+       8. AVATARS & DROPDOWNS
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>👤 Avatars & Dropdowns</h2>
+        <p>Avatar sizes from extra-small to extra-large, avatar groups, and animated dropdown menus.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h4 style="margin-bottom:var(--clay-space-lg);">Avatar Sizes</h4>
+          <div class="flex flex-wrap gap-md" style="align-items:flex-end;">
+            <div>
+              <div class="avatar avatar-xs">XS</div>
+              <div class="text-xs text-muted" style="margin-top:4px;">XS</div>
+            </div>
+            <div>
+              <div class="avatar avatar-sm">SM</div>
+              <div class="text-xs text-muted" style="margin-top:4px;">SM</div>
+            </div>
+            <div>
+              <div class="avatar">MD</div>
+              <div class="text-xs text-muted" style="margin-top:4px;">MD</div>
+            </div>
+            <div>
+              <div class="avatar avatar-lg">LG</div>
+              <div class="text-xs text-muted" style="margin-top:4px;">LG</div>
+            </div>
+            <div>
+              <div class="avatar avatar-xl">XL</div>
+              <div class="text-xs text-muted" style="margin-top:4px;">XL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-bottom:var(--clay-space-lg);">Avatar Colors</h4>
+          <div class="flex flex-wrap gap-md">
+            <div class="avatar avatar-primary">P</div>
+            <div class="avatar avatar-secondary">S</div>
+            <div class="avatar avatar-accent">A</div>
+            <div class="avatar avatar-success">S</div>
+            <div class="avatar avatar-warning">W</div>
+            <div class="avatar avatar-danger">D</div>
+            <div class="avatar avatar-info">I</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-bottom:var(--clay-space-lg);">Avatar Group</h4>
+          <div class="avatar-group">
+            <div class="avatar avatar-primary">JD</div>
+            <div class="avatar avatar-accent">MS</div>
+            <div class="avatar avatar-info">AK</div>
+            <div class="avatar avatar-success">+3</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-bottom:var(--clay-space-lg);">Dropdown Menu</h4>
+          <div class="dropdown" style="display:inline-block;">
+            <button class="btn btn-primary dropdown-toggle">
+              📁 Actions ▾
+            </button>
+            <div class="dropdown-menu">
+              <button class="dropdown-item">✏️ Edit</button>
+              <button class="dropdown-item">📋 Copy</button>
+              <button class="dropdown-item">📤 Export</button>
+              <div class="dropdown-divider"></div>
+              <button class="dropdown-item" style="color:var(--clay-danger-dark);">🗑️ Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider"></div>
+
+  <!-- ============================================================
+       9. PRICING & STATS
+       ============================================================ -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>💰 Pricing & Statistics</h2>
+        <p>Feature-rich pricing cards with featured plan, plus animated stats counters.</p>
+      </div>
+
+      <div class="grid grid-3" style="margin-bottom:var(--clay-space-3xl);">
+        <div class="pricing-card">
+          <div class="pricing-name">Basic</div>
+          <div class="pricing-price">$9</div>
+          <div class="pricing-period">per month</div>
+          <ul class="pricing-features">
+            <li>1 Project</li>
+            <li>5GB Storage</li>
+            <li>Basic Support</li>
+            <li>Community Access</li>
+          </ul>
+          <button class="btn btn-primary btn-block">Get Started</button>
+        </div>
+
+        <div class="pricing-card featured">
+          <span class="pricing-badge">Popular</span>
+          <div class="pricing-name">Pro</div>
+          <div class="pricing-price">$29</div>
+          <div class="pricing-period">per month</div>
+          <ul class="pricing-features">
+            <li>Unlimited Projects</li>
+            <li>50GB Storage</li>
+            <li>Priority Support</li>
+            <li>Advanced Analytics</li>
+            <li>Team Collaboration</li>
+          </ul>
+          <button class="btn btn-primary btn-block">Start Free Trial</button>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-name">Enterprise</div>
+          <div class="pricing-price">$99</div>
+          <div class="pricing-period">per month</div>
+          <ul class="pricing-features">
+            <li>Everything in Pro</li>
+            <li>500GB Storage</li>
+            <li>24/7 Support</li>
+            <li>Custom Integrations</li>
+            <li>SLA Guarantee</li>
+            <li>Dedicated Manager</li>
+          </ul>
+          <button class="btn btn-secondary btn-block">Contact Sales</button>
+        </div>
+      </div>
+
+      <!-- ── Stats ── -->
+      <div class="grid grid-4">
+        <div class="stat">
+          <div class="stat-number">10K+</div>
+          <div class="stat-label">Users</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">Uptime</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Components</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">4.9</div>
+          <div class="stat-label">Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider"></div>
+
+  <!-- ============================================================
+       10. TIMELINE, STEPS & RATINGS
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>📅 Timeline, Steps & Ratings</h2>
+        <p>Vertical timeline, multi-step progress indicators, and interactive star ratings.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <!-- ── Timeline ── -->
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Jan 2026</div>
+              <div class="timeline-title">Project Started</div>
+              <p class="timeline-desc">Initial concept and design phase began.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background:var(--clay-accent);"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Mar 2026</div>
+              <div class="timeline-title">Prototype Complete</div>
+              <p class="timeline-desc">First interactive prototype with core components.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background:var(--clay-success);"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Jun 2026</div>
+              <div class="timeline-title">Launch 🚀</div>
+              <p class="timeline-desc">Full design system released to the public.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <!-- ── Steps ── -->
+          <div class="card" style="margin-bottom:var(--clay-space-lg);">
+            <h4 style="margin-bottom:var(--clay-space-lg);">Step Indicator</h4>
+            <div class="steps">
+              <div class="step completed">
+                <div class="step-number">✓</div>
+                <div class="step-label">Cart</div>
+              </div>
+              <div class="step active">
+                <div class="step-number">2</div>
+                <div class="step-label">Shipping</div>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-label">Payment</div>
+              </div>
+              <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-label">Confirm</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Rating ── -->
+          <div class="card">
+            <h4 style="margin-bottom:var(--clay-space-lg);">Star Rating</h4>
+            <div class="rating" data-rating="0">
+              <span class="rating-star" data-value="1">★</span>
+              <span class="rating-star" data-value="2">★</span>
+              <span class="rating-star" data-value="3">★</span>
+              <span class="rating-star" data-value="4">★</span>
+              <span class="rating-star" data-value="5">★</span>
+            </div>
+            <p class="text-sm text-muted" style="margin-top:var(--clay-space-sm);">Click a star to rate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider"></div>
+
+  <!-- ============================================================
+       11. FEATURES & CTA
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>✨ Features & Call to Action</h2>
+        <p>Feature grid with icons, plus a premium call-to-action section.</p>
+      </div>
+
+      <div class="grid grid-3" style="margin-bottom:var(--clay-space-3xl);">
+        <div class="feature">
+          <div class="feature-icon">🎨</div>
+          <div class="feature-title">Beautiful Design</div>
+          <p class="feature-desc">Soft, tactile clay aesthetics with premium shadows and smooth animations.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🌙</div>
+          <div class="feature-title">Dark Mode</div>
+          <p class="feature-desc">Built-in dark theme that respects user preferences with smooth transitions.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">📱</div>
+          <div class="feature-title">Responsive</div>
+          <p class="feature-desc">Fully responsive design that works beautifully on all screen sizes.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <div class="feature-title">Lightweight</div>
+          <p class="feature-desc">Pure CSS and vanilla JS — no framework dependencies required.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">♿</div>
+          <div class="feature-title">Accessible</div>
+          <p class="feature-desc">Built with accessibility in mind — proper contrast, focus states, and ARIA.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔧</div>
+          <div class="feature-title">Customizable</div>
+          <p class="feature-desc">CSS custom properties make it easy to theme and extend any component.</p>
+        </div>
+      </div>
+
+      <!-- ── CTA ── -->
+      <div class="cta-section">
+        <div class="cta-title">Ready to Get Started?</div>
+        <p class="cta-text">Join thousands of developers using the Claymorphism design system. Start building beautiful, tactile interfaces today.</p>
+        <div class="cta-buttons">
+          <button class="btn btn-primary btn-lg">🚀 Start Building</button>
+          <button class="btn btn-outline btn-lg" data-modal-target="modal-default">📧 Subscribe</button>
+          <button class="btn btn-ghost btn-lg" data-toast="success" data-toast-message="Documentation loaded! 📚">📚 Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider"></div>
+
+  <!-- ============================================================
+       12. LOADERS, SKELETON & CODE
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>⏳ Loaders, Skeleton & Code</h2>
+        <p>Spinners, skeleton loading screens, and beautiful code blocks with copy.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card flex-center" style="flex-direction:column; gap:var(--clay-space-md);">
+          <h4>Spinners</h4>
+          <div class="spinner spinner-sm"></div>
+          <div class="spinner"></div>
+          <div class="spinner spinner-lg"></div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-bottom:var(--clay-space-lg);">Skeleton Loading</h4>
+          <div style="display:flex; gap:var(--clay-space-md); align-items:center; margin-bottom:var(--clay-space-md);">
+            <div class="skeleton skeleton-avatar"></div>
+            <div style="flex:1;">
+              <div class="skeleton skeleton-title"></div>
+              <div class="skeleton skeleton-text"></div>
+            </div>
+          </div>
+          <div class="skeleton skeleton-thumbnail"></div>
+          <div style="margin-top:var(--clay-space-md);">
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-bottom:var(--clay-space-lg);">Dividers</h4>
+          <p class="text-muted">Default divider:</p>
+          <hr class="divider divider-sm">
+          <p class="text-muted">With text:</p>
+          <div class="divider-text">or continue with</div>
+          <div class="flex gap-sm">
+            <button class="btn btn-sm btn-primary">Google</button>
+            <button class="btn btn-sm btn-secondary">GitHub</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Code Block ── -->
+      <div style="margin-top:var(--clay-space-xl);">
+        <h4 style="margin-bottom:var(--clay-space-md);">Code Block (with copy)</h4>
+        <div class="code-block">
+          <code><span style="color:var(--clay-primary-dark);">.btn-primary</span> {<br>
+            &nbsp;&nbsp;<span style="color:var(--clay-accent-dark);">background</span>: <span style="color:var(--clay-success-dark);">var(--clay-primary)</span>;<br>
+            &nbsp;&nbsp;<span style="color:var(--clay-accent-dark);">box-shadow</span>: <span style="color:var(--clay-success-dark);">var(--clay-shadow-button)</span>;<br>
+            &nbsp;&nbsp;<span style="color:var(--clay-accent-dark);">border-radius</span>: <span style="color:var(--clay-success-dark);">var(--clay-radius-md)</span>;<br>
+            &nbsp;&nbsp;<span style="color:var(--clay-accent-dark);">transition</span>: <span style="color:var(--clay-success-dark);">all var(--clay-transition-normal)</span>;<br>
+          }</code>
+        </div>
+      </div>
+
+      <div style="margin-top:var(--clay-space-xl);">
+        <h4 style="margin-bottom:var(--clay-space-md);">Inline Code Example</h4>
+        <p>Use <code class="inline-code">var(--clay-primary)</code> for primary colors and <code class="inline-code">var(--clay-shadow-md)</code> for medium shadows. Combine with classes like <code class="inline-code">.btn</code>, <code class="inline-code">.card</code>, and <code class="inline-code">.badge</code>.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider"></div>
+
+  <!-- ============================================================
+       13. SIDEBAR LAYOUT
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>📐 Sidebar Layout</h2>
+        <p>Sticky sidebar with navigation links paired with main content area — perfect for dashboards.</p>
+      </div>
+
+      <div class="flex" style="gap:var(--clay-space-xl);">
+        <aside class="sidebar">
+          <div class="sidebar-title">Dashboard</div>
+          <nav class="sidebar-menu">
+            <a href="#" class="sidebar-link active">📊 Overview</a>
+            <a href="#" class="sidebar-link">📁 Projects</a>
+            <a href="#" class="sidebar-link">👥 Team</a>
+            <a href="#" class="sidebar-link">📈 Analytics</a>
+            <a href="#" class="sidebar-link">⚙️ Settings</a>
+          </nav>
+        </aside>
+        <div style="flex:1;">
+          <div class="card">
+            <h4>Dashboard Overview</h4>
+            <p class="text-muted">This sidebar layout demonstrates a typical dashboard pattern with a sticky sidebar. The sidebar maintains its position while scrolling, and the main content area fills the remaining space. Perfect for admin panels, settings pages, and content management systems.</p>
+            <div class="grid grid-2" style="margin-top:var(--clay-space-lg);">
+              <div class="stat" style="padding:var(--clay-space-md);">
+                <div class="stat-number" style="font-size:var(--clay-font-2xl);">12</div>
+                <div class="stat-label">Active Projects</div>
+              </div>
+              <div class="stat" style="padding:var(--clay-space-md);">
+                <div class="stat-number" style="font-size:var(--clay-font-2xl);">48</div>
+                <div class="stat-label">Team Members</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">🧱 Clay UI</div>
+          <p class="footer-desc">A premium Claymorphism design system and component library. Build beautiful, tactile interfaces with soft shadows and organic forms.</p>
+          <div class="rating" data-rating="5" style="margin-top:var(--clay-space-md);">
+            <span class="rating-star active" data-value="1">★</span>
+            <span class="rating-star active" data-value="2">★</span>
+            <span class="rating-star active" data-value="3">★</span>
+            <span class="rating-star active" data-value="4">★</span>
+            <span class="rating-star active" data-value="5">★</span>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Components</div>
+          <div class="footer-links">
+            <a href="#buttons">Buttons</a>
+            <a href="#cards">Cards</a>
+            <a href="#forms">Forms</a>
+            <a href="#modals">Modals</a>
+            <a href="#pricing">Pricing</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Resources</div>
+          <div class="footer-links">
+            <a href="docs/style-guide.md">Documentation</a>
+            <a href="#">Changelog</a>
+            <a href="#">GitHub</a>
+            <a href="#">License</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Company</div>
+          <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Claymorphism Design System. All rights reserved. Built with 🧱.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/claymorphism.js"></script>
+</body>
+</html>
